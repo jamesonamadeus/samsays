@@ -247,6 +247,140 @@ iframe,
 object {
   max-width: 100%; }
 
+.hero {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  color: #fff;
+  flex-direction: column;
+  background: #7ed6df;
+  min-height: 90vh;
+  padding: 20px 0;
+  text-align: center;
+  width: 100%;
+  background: url(../images/hero-lg.png) no-repeat center right;
+  width: 100%;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-color: blue; }
+  .hero-tagline {
+    font-size: 60px !important;
+    font-size: 3.75rem !important;
+    font-family: arial !important;
+    color: #fff;
+    margin: 30px auto 50px;
+    max-width: 860px;
+    text-shadow: -1px 2px 7px #111; }
+  .hero a {
+    font-size: 32px !important;
+    font-size: 2rem !important;
+    color: #fff;
+    margin-left: -10px;
+    margin-top: 30vh; }
+    .hero a p {
+      margin: 0 0 20px; }
+  .hero-alt {
+    min-height: 300px; }
+    .hero-alt .hero-tagline {
+      font-size: 54px !important;
+      font-size: 3.375rem !important;
+      margin: 60px auto 20px; }
+
+@media only screen and (max-width: 1000px) {
+  .hero-tagline {
+    font-size: 54px !important;
+    font-size: 3.375rem !important; } }
+
+@media only screen and (max-width: 800px) {
+  .hero {
+    min-height: 480px; }
+    .hero-tagline {
+      font-size: 48px !important;
+      font-size: 3rem !important;
+      margin: 45px auto 50px; }
+    .hero a {
+      font-size: 32px !important;
+      font-size: 2rem !important;
+      margin-top: 80px; }
+    .hero-alt {
+      min-height: 280px; }
+      .hero-alt .hero-tagline {
+        font-size: 48px !important;
+        font-size: 3rem !important;
+        margin: 45px auto 15px; } }
+
+@media only screen and (max-width: 660px) {
+  .hero {
+    min-height: 380px; }
+    .hero-tagline {
+      font-size: 42px !important;
+      font-size: 2.625rem !important;
+      margin: 60px auto 50px; }
+    .hero a {
+      display: none; }
+    .hero-alt {
+      min-height: 240px; }
+      .hero-alt .hero-tagline {
+        font-size: 36px !important;
+        font-size: 2.25rem !important;
+        margin: 45px auto 15px; } }
+
+@media only screen and (max-width: 600px) {
+  .hero {
+    min-height: 360px; }
+    .hero-tagline {
+      font-size: 34px !important;
+      font-size: 2.125rem !important; }
+    .hero-alt {
+      min-height: 220px; }
+      .hero-alt .hero-tagline {
+        font-size: 36px !important;
+        font-size: 2.25rem !important;
+        margin: 45px auto 15px; } }
+
+@media only screen and (max-width: 480px) {
+  .hero {
+    min-height: 320px; }
+    .hero-tagline {
+      font-size: 30px !important;
+      font-size: 1.875rem !important;
+      margin: 80px auto 50px; }
+    .hero-alt {
+      min-height: 180px; }
+      .hero-alt .hero-tagline {
+        font-size: 28px !important;
+        font-size: 1.75rem !important; } }
+
+@media only screen and (max-width: 420px) {
+  .hero {
+    min-height: 300px; }
+    .hero-tagline {
+      font-size: 29px !important;
+      font-size: 1.8125rem !important; }
+    .hero-alt {
+      min-height: 180px; }
+      .hero-alt .hero-tagline {
+        font-size: 28px !important;
+        font-size: 1.75rem !important; } }
+
+@media only screen and (max-width: 400px) {
+  .hero-tagline {
+    font-size: 28px !important;
+    font-size: 1.75rem !important; } }
+
+@media only screen and (max-width: 380px) {
+  .hero-tagline {
+    font-size: 24px !important;
+    font-size: 1.5rem !important; } }
+
 h1 {
   color: #4834d4; }
 
