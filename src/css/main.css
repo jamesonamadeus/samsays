@@ -247,38 +247,78 @@ iframe,
 object {
   max-width: 100%; }
 
+.banner {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99; }
+  .banner--top {
+    background: transparent;
+    background: #7ed6df; }
+    .banner--top .logo-img {
+      display: block; }
+    .banner--top .logo-img-scroll {
+      display: none; }
+
+.logo-main {
+  font-size: 10px !important;
+  font-size: 0.625rem !important;
+  margin: 0;
+  width: 200px; }
+
+@media only screen and (max-width: 600px) {
+  .banner {
+    padding: 3px 3px 0; } }
+
 .hero {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -ms-flex-pack: end;
+  -webkit-justify-content: flex-end;
+  justify-content: flex-end;
+  background-image: linear-gradient(45deg, red, #f06d06);
   color: #fff;
-  flex-direction: column;
-  background: #7ed6df;
-  min-height: 90vh;
+  min-height: 100vh;
   padding: 20px 0;
-  text-align: center;
-  width: 100%;
-  background: url(../images/hero-lg.png) no-repeat center right;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: blue; }
+  text-align: center; }
+  .hero-inner {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -ms-flex-pack: end;
+    -webkit-justify-content: flex-end;
+    justify-content: flex-end;
+    margin: 60px auto;
+    width: 100%; }
+  .hero-content {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column;
+    text-align: left; }
+  .hero-image {
+    padding: 30px;
+    width: 80%; }
   .hero-tagline {
     font-size: 60px !important;
     font-size: 3.75rem !important;
     font-family: arial !important;
     color: #fff;
-    margin: 30px auto 50px;
-    max-width: 860px;
-    text-shadow: -1px 2px 7px #111; }
+    text-shadow: -1px 2px 7px #111;
+    text-align: left; }
   .hero a {
     font-size: 32px !important;
     font-size: 2rem !important;

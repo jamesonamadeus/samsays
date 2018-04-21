@@ -1,0 +1,36 @@
+.banner {
+  @include flexbox(flex);
+  @include justify-content(space-between);
+  padding: 10px 20px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 99;
+
+  &--top {
+    background: transparent;
+    background: $color-secondary;
+
+    .logo-img {
+      display: block;
+    }
+
+    .logo-img-scroll {
+      display: none;
+    }
+  }
+}
+
+.logo {
+  &-main {
+    @include font-size(10); //Height for Logo Adjustment
+    margin: 0;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: $break-md) {
+  .banner {
+    padding: 3px 3px 0;
+  }
+}

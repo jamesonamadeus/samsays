@@ -1,30 +1,37 @@
 .hero {
   @include flexbox(flex);
-  @include align-items(center);
-  @include justify-content(center);
+  @include justify-content(flex-end);
+  background-image: linear-gradient(45deg, red, #f06d06);
   color: $white;
-  flex-direction: column;
-  background: $color-secondary;
-  min-height: 90vh;
+  min-height: 100vh;
   padding: 20px 0;
   text-align: center;
-  width: 100%;
 
-  background: url(../images/hero-lg.png) no-repeat center right;
-  width: 100%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  background-color: blue;
+  &-inner {
+    @include flexbox(flex);
+    @include align-items(flex-start);
+    @include justify-content(flex-end);
+    margin: 60px auto;
+    width: 100%;
+  }
+
+  &-content {
+    @include flexbox(flex);
+    @include flex-direction(column);
+    text-align: left;
+  }
+
+  &-image {
+    padding: 30px;
+    width: 80%;
+  }
 
   &-tagline {
     @include font-size(60);
     font-family: arial !important;
     color: $white;
-    margin: 30px auto 50px;
-    max-width: 860px;
     text-shadow: -1px 2px 7px $black;
+    text-align: left;
   }
 
   a {
