@@ -23,7 +23,7 @@
     margin: 40px 30px 0;
     left: 0;
     position: absolute;
-    width: 50%;
+    width: 70%;
   }
 
   &-tagline {
@@ -36,10 +36,11 @@
   }
 
   &-tagline {
-    @include font-size(46);
+    @include font-size(52);
     font-family: arial !important;
     color: $white;
-    text-shadow: 1px 2px 3px $black;
+    font-weight: bold;
+    text-shadow: 3px 4px 4px $black;
     text-align: left;
   }
 
@@ -58,18 +59,16 @@
     margin: 60px 0 5px;
 
     &-info {
-      @include font-size(40);
-      background: -webkit-linear-gradient(#c60c30 55%, #003478 45%);
+      @include font-size(38);
+      text-shadow: 1px 1px 1px #c60c30, 3px 3px 5px #003478;
       font-weight: bold;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       position: relative;
       margin: 5px 0;
     }
 
     &-img {
       margin: 0 15px;
-      width: 70px;
+      width: 65px;
     }
   }
 

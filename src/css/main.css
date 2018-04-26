@@ -318,16 +318,17 @@ object {
     margin: 40px 30px 0;
     left: 0;
     position: absolute;
-    width: 50%; }
+    width: 70%; }
   .hero-image {
     margin-top: 10px;
     width: 77%; }
   .hero-tagline {
-    font-size: 46px !important;
-    font-size: 2.875rem !important;
+    font-size: 52px !important;
+    font-size: 3.25rem !important;
     font-family: arial !important;
     color: #fff;
-    text-shadow: 1px 2px 3px #111;
+    font-weight: bold;
+    text-shadow: 3px 4px 4px #111;
     text-align: left; }
   .hero-info {
     display: -ms-flexbox;
@@ -355,17 +356,15 @@ object {
     justify-content: flex-start;
     margin: 60px 0 5px; }
     .hero-subline-info {
-      font-size: 40px !important;
-      font-size: 2.5rem !important;
-      background: -webkit-linear-gradient(#c60c30 55%, #003478 45%);
+      font-size: 38px !important;
+      font-size: 2.375rem !important;
+      text-shadow: 1px 1px 1px #c60c30, 3px 3px 5px #003478;
       font-weight: bold;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
       position: relative;
       margin: 5px 0; }
     .hero-subline-img {
       margin: 0 15px;
-      width: 70px; }
+      width: 65px; }
   .hero-btn {
     font-size: 24px !important;
     font-size: 1.5rem !important;
