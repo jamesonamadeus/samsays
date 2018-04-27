@@ -41,9 +41,8 @@ $offset: 70px;
 
   &-tagline {
     @include font-size(48);
-    font-family: arial !important;
+    font-family: $font-primary-bold;
     color: $white;
-    font-weight: bold;
     text-shadow: 3px 4px 4px $black;
     text-align: left;
   }
