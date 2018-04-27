@@ -1,0 +1,38 @@
+/* Navigation - Fill*/
+@-webkit-keyframes fill {
+  0% {
+    width: 0%;
+    height: 1px;
+  }
+  50% {
+    width: 100%;
+    height: 1px;
+  }
+  100% {
+    width: 100%;
+    height: 100%;
+  }
+}
+
+//Nav Keyframes
+@keyframes slideInLeft {
+  0% {
+    transform: translate3d(250px, 0, 0);
+    visibility: visible;
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes slideOutLeft {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  100% {
+    transform: translate3d(250px, 0, 0);
+    visibility: hidden;
+  }
+}
