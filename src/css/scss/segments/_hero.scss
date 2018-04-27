@@ -4,7 +4,7 @@ $offset: 70px;
 .hero {
   @include align-items(center);
   @include flexbox(flex);
-  @include justify-content(center);
+  @include justify-content(flex-start);
   height: 120vh;
   overflow: hidden;
   position: relative;
@@ -22,10 +22,10 @@ $offset: 70px;
   }
 
   &-bg {
-    background: url("../images/hero-lg.png") right no-repeat;
-    background-size: 80%;
+    background: url("../images/hero-lg.png") right center no-repeat;
+    background-size: 76%;
     position: absolute;
-    top: $offset;
+    top: 0;
     bottom: -$offset;
     right: 0;
     left: 0;
@@ -34,6 +34,9 @@ $offset: 70px;
 
   &-content {
     position: relative;
+    padding: 30px;
+    top: -5%;
+    max-width: 800px;
   }
 
   &-tagline {
@@ -48,16 +51,16 @@ $offset: 70px;
   &-info {
     @include flexbox(flex);
     @include flex-direction(column);
-    @include align-items(center);
-    @include justify-content(flex-start);
-    width: 400px;
+    @include align-items(flex-start);
+    @include justify-content(center);
   }
 
   &-subline {
     @include flexbox(flex);
     @include align-items(center);
-    @include justify-content(flex-start);
+    @include justify-content(center);
     margin: 60px 0 5px;
+    width: 400px;
 
     &-info {
       @include font-size(38);
@@ -66,6 +69,7 @@ $offset: 70px;
       font-weight: bold;
       position: relative;
       margin: 5px 0;
+      text-align: center;
     }
 
     &-img {

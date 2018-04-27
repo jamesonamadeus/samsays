@@ -283,9 +283,9 @@ object {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
+  -ms-flex-pack: start;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
   height: 120vh;
   overflow: hidden;
   position: relative;
@@ -306,16 +306,19 @@ object {
     top: -70px;
     transform: skewY(-5deg); }
   .hero-bg {
-    background: url("../images/hero-lg.png") right no-repeat;
-    background-size: 80%;
+    background: url("../images/hero-lg.png") right center no-repeat;
+    background-size: 76%;
     position: absolute;
-    top: 70px;
+    top: 0;
     bottom: -70px;
     right: 0;
     left: 0;
     transform: skewY(5deg); }
   .hero-content {
-    position: relative; }
+    position: relative;
+    padding: 30px;
+    top: -5%;
+    max-width: 800px; }
   .hero-tagline {
     font-size: 52px !important;
     font-size: 3.25rem !important;
@@ -331,13 +334,12 @@ object {
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
     flex-direction: column;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    -ms-flex-pack: start;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-    width: 400px; }
+    -ms-flex-align: start;
+    -webkit-align-items: flex-start;
+    align-items: flex-start;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center; }
   .hero-subline {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -345,10 +347,11 @@ object {
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    -ms-flex-pack: start;
-    -webkit-justify-content: flex-start;
-    justify-content: flex-start;
-    margin: 60px 0 5px; }
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 60px 0 5px;
+    width: 400px; }
     .hero-subline-info {
       font-size: 38px !important;
       font-size: 2.375rem !important;
@@ -356,7 +359,8 @@ object {
       text-shadow: 1px 1px 1px #c60c30, 3px 3px 5px #003478;
       font-weight: bold;
       position: relative;
-      margin: 5px 0; }
+      margin: 5px 0;
+      text-align: center; }
     .hero-subline-img {
       margin: 0 15px;
       width: 65px; }
