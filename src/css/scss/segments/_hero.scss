@@ -1,38 +1,39 @@
+$skewDeg: -5deg;
+$offset: 70px;
+
 .hero {
+  @include align-items(center);
   @include flexbox(flex);
-  @include justify-content(flex-end);
-  @include gradient-linear($cc-1, $cc-3);
-  color: $white;
-  min-height: 100vh;
-  padding: 20px 0;
+  @include justify-content(center);
+  height: 120vh;
+  overflow: hidden;
+  position: relative;
   text-align: center;
 
-  &-inner {
-    @include flexbox(flex);
-    @include align-items(flex-start);
-    @include justify-content(flex-end);
-    margin: 60px auto 0;
-    padding: 30px 20px;
-    width: 100%;
+  &-wrapper {
+    @include gradient-linear($cc-1, $cc-3);
+    bottom: $offset;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: -$offset;
+    transform: skewY($skewDeg);
+  }
+
+  &-bg {
+    background: url("../images/hero-lg.png") right no-repeat;
+    background-size: 80%;
+    position: absolute;
+    top: $offset;
+    bottom: -$offset;
+    right: 0;
+    left: 0;
+    transform: skewY(-$skewDeg);
   }
 
   &-content {
-    @include flexbox(flex);
-    @include flex-direction(column);
-    text-align: left;
-    margin: 40px 30px 0;
-    left: 0;
-    position: absolute;
-    width: 70%;
-  }
-
-  &-tagline {
-    // width: 60%;
-  }
-
-  &-image {
-    margin-top: 10px;
-    width: 77%;
+    position: relative;
   }
 
   &-tagline {
@@ -60,6 +61,7 @@
 
     &-info {
       @include font-size(38);
+      color: $white;
       text-shadow: 1px 1px 1px #c60c30, 3px 3px 5px #003478;
       font-weight: bold;
       position: relative;
@@ -85,26 +87,6 @@
     margin: 5px 0 5px;
     cursor: pointer;
     width: 400px;
-  }
-
-  a {
-    @include font-size(32);
-    color: $white;
-    margin-left: -10px;
-    margin-top: 30vh;
-
-    p {
-      margin: 0 0 20px;
-    }
-  }
-
-  &-alt {
-    min-height: 300px;
-
-    .hero-tagline {
-      @include font-size(54);
-      margin: 60px auto 20px;
-    }
   }
 }
 
