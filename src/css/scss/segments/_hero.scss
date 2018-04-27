@@ -35,22 +35,23 @@ $offset: 70px;
   &-content {
     position: relative;
     padding: 30px;
-    top: -3%;
-    max-width: 800px;
+    top: -2%;
+    width: 100%;
   }
 
   &-tagline {
-    @include font-size(48);
+    @include font-size(112);
     font-family: $font-primary-bold;
     color: $white;
-    text-shadow: 3px 4px 4px $black;
+    text-shadow: 3px 5px 6px $black;
+    margin: -40px 0 0 0;
     text-align: left;
   }
 
   &-info {
     @include flexbox(flex);
     @include flex-direction(column);
-    @include align-items(flex-start);
+    @include align-items(flex-end);
     @include justify-content(center);
   }
 
@@ -58,11 +59,11 @@ $offset: 70px;
     @include flexbox(flex);
     @include align-items(center);
     @include justify-content(center);
-    margin: 60px 0 5px;
-    width: 400px;
+    margin: -60px 0 5px;
+    width: 540px;
 
     &-info {
-      @include font-size(38);
+      @include font-size(28);
       color: $white;
       text-shadow: 1px 1px 1px #c60c30, 3px 3px 5px #003478;
       font-weight: bold;
@@ -72,24 +73,24 @@ $offset: 70px;
     }
 
     &-img {
-      margin: 0 15px;
+      margin: 0 0 0 15px;
       width: 65px;
     }
   }
 
   &-btn {
-    @include font-size(24);
+    @include font-size(32);
     background: $cc-3;
     border: 2px solid $white;
     border-radius: 50px;
     box-shadow: 1px 2px 3px $black;
     color: $white;
     text-shadow: 1px 2px 3px $black;
-    padding: 18px 20px 20px;
-    height: 70px;
+    padding: 16px 20px 20px;
+    height: 80px;
     margin: 5px 0 5px;
     cursor: pointer;
-    width: 400px;
+    width: 540px;
   }
 }
 
