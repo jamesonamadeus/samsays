@@ -232,7 +232,8 @@ html {
     background: #7ce6ea;
     border-color: #24d6dc;
     color: #fff;
-    text-decoration: none; }
+    text-decoration: none;
+    text-shadow: 1px 2px 3px #fff; }
   .btn:active {
     background: #1cacb1;
     border-color: #1cacb1; }
@@ -367,7 +368,7 @@ object {
     border: 3px solid #111;
     color: #fff;
     text-shadow: 1px 2px 3px #111;
-    padding: 11px 20px 15px !important; }
+    padding: 11px 25px 15px !important; }
 
 @media only screen and (max-width: 800px) {
   .nav-list {
@@ -681,9 +682,6 @@ object {
     font-size: 24px !important;
     font-size: 1.5rem !important; } }
 
-h1 {
-  color: #24d6dc; }
-
 body {
   margin: 0 auto; }
 
@@ -694,11 +692,14 @@ body {
   margin: 0 auto;
   text-align: center; }
   .section-inner {
-    padding: 60px 10%; }
-  .section .heading {
-    font-size: 36px !important;
-    font-size: 2.25rem !important;
+    padding: 50px 10%; }
+  .section-alt {
+    background: #24d6dc; }
+  .section-heading {
+    font-size: 42px !important;
+    font-size: 2.625rem !important;
     color: #111;
+    font-family: "ProximaNova-Bold", sans-serif;
     padding: 0;
     margin: 0 auto 30px;
     text-align: center; }
@@ -718,11 +719,11 @@ body {
     font-size: 32px !important;
     font-size: 2rem !important; }
   .section-inner {
-    padding: 50px 3%; } }
+    padding: 60px 3%; } }
 
 @media only screen and (max-width: 600px) {
   .section-inner {
-    padding: 40px 20px; }
+    padding: 60px 20px; }
   .section .heading {
     font-size: 28px !important;
     font-size: 1.75rem !important;
@@ -730,12 +731,64 @@ body {
 
 @media only screen and (max-width: 480px) {
   .section-inner {
-    padding: 30px 15px; }
+    padding: 60px 15px; }
   .section .heading {
     font-size: 24px !important;
     font-size: 1.5rem !important; } }
 
-@media only screen and (max-width: 380px) {
+h1 {
+  color: #24d6dc; }
+
+body {
+  margin: 0 auto; }
+
+.main {
+  margin: 0 auto; }
+
+.section {
+  margin: 0 auto;
+  text-align: center; }
+  .section-inner {
+    padding: 50px 10%; }
+  .section-alt {
+    background: #24d6dc; }
+  .section-heading {
+    font-size: 42px !important;
+    font-size: 2.625rem !important;
+    color: #111;
+    font-family: "ProximaNova-Bold", sans-serif;
+    padding: 0;
+    margin: 0 auto 30px;
+    text-align: center; }
+  .section p {
+    margin: 0 auto 20px;
+    max-width: 600px;
+    text-align: center; }
+  .section .btn {
+    width: 300px; }
+
+@media only screen and (max-width: 1000px) {
+  .section-inner {
+    padding: 50px 5%; } }
+
+@media only screen and (max-width: 800px) {
   .section .heading {
-    font-size: 20px !important;
-    font-size: 1.25rem !important; } }
+    font-size: 32px !important;
+    font-size: 2rem !important; }
+  .section-inner {
+    padding: 60px 3%; } }
+
+@media only screen and (max-width: 600px) {
+  .section-inner {
+    padding: 60px 20px; }
+  .section .heading {
+    font-size: 28px !important;
+    font-size: 1.75rem !important;
+    margin: 0 auto 20px; } }
+
+@media only screen and (max-width: 480px) {
+  .section-inner {
+    padding: 60px 15px; }
+  .section .heading {
+    font-size: 24px !important;
+    font-size: 1.5rem !important; } }
