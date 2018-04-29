@@ -133,6 +133,23 @@
   background: linear-gradient(to bottom, $start 0%, $end 100%);
 }
 
+// linear gradient
+@mixin gradient-linear-adj($start, $end) {
+  background: $start;
+  background: -moz-linear-gradient(135deg, $start 0%, $end 80%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    left bottom,
+    color-stop(0%, $start),
+    color-stop(100%, $end)
+  );
+  background: -webkit-linear-gradient(135deg, $start 0%, $end 80%);
+  background: -o-linear-gradient(135deg, $start 0%, $end 80%);
+  background: -ms-linear-gradient(135deg, $start 0%, $end 80%);
+  background: linear-gradient(135deg, $start 0%, $end 80%);
+}
+
 /** --------------------------------------------------------------------
 
     Flexbox Mixins

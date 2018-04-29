@@ -15,7 +15,7 @@
 
   &:hover,
   &:focus {
-    background: $color-primary;
+    background: lighten($color-primary, 20%);
     border-color: $color-primary;
     color: #fff;
     text-decoration: none;
