@@ -1,0 +1,37 @@
+.benefits {
+  background: $cc-1;
+  margin: -$offset auto 0 !important;
+  transform: skewY($skewDeg);
+
+  .section-inner {
+    padding: 80px 3% 60px;
+    transform: skewY(-$skewDeg);
+  }
+
+  .section-heading {
+    color: $white;
+  }
+
+  &-contain {
+    @include flexbox(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    @include flex-wrap(wrap);
+    margin: 50px auto 0;
+  }
+
+  &-element {
+    margin: 20px;
+    width: 30%;
+
+    h3 {
+      @include font-size(28);
+      color: $white !important;
+      font-family: $font-primary-bold;
+    }
+
+    p {
+      color: $white;
+    }
+  }
+}
