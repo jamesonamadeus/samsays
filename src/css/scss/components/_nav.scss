@@ -1,7 +1,7 @@
 .banner {
   @include flexbox(flex);
   @include justify-content(space-between);
-  padding: 20px;
+  padding: 15px;
   position: fixed;
   top: 0;
   width: 100%;
@@ -16,6 +16,83 @@
 
     .logo-img-scroll {
       display: none;
+    }
+  }
+
+  &--scroll {
+    @include transition(all 1s ease);
+    background: $white;
+    border-bottom: 1px solid $color-secondary;
+    position: fixed;
+
+    .nav {
+      &-link {
+        text-shadow: none;
+      }
+
+      &-list {
+        .nav-link {
+          color: $color-primary;
+
+          &:hover,
+          &:focus,
+          &:active {
+            background: $white;
+            color: $color-secondary;
+          }
+        }
+
+        .submenu {
+          display: none;
+        }
+
+        .submenu-item .nav-link {
+          display: block;
+          background: $white !important;
+        }
+
+        > .nav-item {
+          &:hover,
+          &:active,
+          &:focus {
+            background: $white;
+          }
+        }
+      }
+    }
+
+    // Dropdown
+    .dropdown-arrow {
+      border-top: 6px solid $color-primary;
+    }
+
+    .dropdown:hover > .submenu {
+      display: block;
+    }
+
+    // Logo Swap
+    .logo-img {
+      display: none;
+    }
+
+    .logo-img-scroll {
+      display: block;
+    }
+
+    @media only screen and (max-width: 1100px) {
+      .nav {
+        &-list {
+          &.open {
+            background: rgba(255, 255, 255, 0.9) !important;
+          }
+        }
+
+        &-cta {
+          border: 1px solid $color-primary;
+          color: $white !important;
+          width: 100%;
+        }
+      }
     }
   }
 }
@@ -41,11 +118,15 @@
   &-item {
     list-style: none;
     margin: 0 10px;
+
+    &-adj {
+      margin: 0 0 0 10px;
+    }
   }
 
   &-link {
     @include transition(all 1s);
-    @include font-size(20);
+    @include font-size(22);
     color: $white;
     display: block;
     font-family: $font-primary;
@@ -86,7 +167,8 @@
     border: 3px solid $black;
     color: $white;
     text-shadow: 1px 2px 3px $black;
-    padding: 11px 25px 15px !important;
+    padding: 10px 25px 15px !important;
+    width: 180px;
   }
 }
 
@@ -101,7 +183,7 @@ $brgr-text-pad: $brgr-margin;
 $brgr-transition-speed: 0.5s;
 $brgr-transition: all $brgr-transition-speed ease;
 
-@media only screen and (max-width: $break-lg) {
+@media only screen and (max-width: $break-xlg) {
   .nav {
     &-list {
       @include flexbox(flex);

@@ -67,7 +67,7 @@ $offset: 34px;
     width: 540px;
 
     &-primer {
-      @include font-size(18);
+      @include font-size(22);
       color: lighten($color-text, 90%);
       margin: 0 10px 0 0;
       text-shadow: 1px 2px 3px $black;
