@@ -9,14 +9,6 @@
 
   &--top {
     background: transparent;
-
-    .logo-img {
-      display: block;
-    }
-
-    .logo-img-scroll {
-      display: none;
-    }
   }
 
   &--scroll {
@@ -40,6 +32,10 @@
             background: $white;
             color: $color-secondary;
           }
+        }
+
+        .nav-cta {
+          color: $white;
         }
 
         .submenu {
@@ -70,15 +66,6 @@
       display: block;
     }
 
-    // Logo Swap
-    .logo-img {
-      display: none;
-    }
-
-    .logo-img-scroll {
-      display: block;
-    }
-
     @media only screen and (max-width: 1100px) {
       .nav {
         &-list {
@@ -100,8 +87,9 @@
 .logo {
   &-main {
     @include font-size(10); //Height for Logo Adjustment
+    height: 60px;
     margin: 0;
-    width: 230px;
+    width: 215px;
   }
 }
 
@@ -167,7 +155,7 @@
     border: 3px solid $black;
     color: $white;
     text-shadow: 1px 2px 3px $black;
-    padding: 10px 25px 15px !important;
+    padding: 11px 25px 13px !important;
     width: 180px;
   }
 }
