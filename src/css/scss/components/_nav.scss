@@ -101,7 +101,7 @@
   &-main {
     @include font-size(10); //Height for Logo Adjustment
     margin: 0;
-    width: 200px;
+    width: 230px;
   }
 }
 
@@ -177,7 +177,7 @@ $brgr-border-width: 2px;
 $brgr-bun-height: $brgr-border-width;
 $brgr-bun-width: 25px;
 $brgr-font-size: 22px;
-$brgr-height: 56px;
+$brgr-height: 65px;
 $brgr-margin: 40px;
 $brgr-text-pad: $brgr-margin;
 $brgr-transition-speed: 0.5s;
