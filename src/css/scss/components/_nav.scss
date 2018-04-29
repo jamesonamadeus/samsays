@@ -161,9 +161,9 @@
 }
 
 //Nav Variables
-$brgr-border-width: 2px;
+$brgr-border-width: 3px;
 $brgr-bun-height: $brgr-border-width;
-$brgr-bun-width: 25px;
+$brgr-bun-width: 32px;
 $brgr-font-size: 22px;
 $brgr-height: 65px;
 $brgr-margin: 40px;
@@ -309,11 +309,11 @@ $brgr-transition: all $brgr-transition-speed ease;
       }
 
       &--mid {
-        top: 8px;
+        top: 9px;
       }
 
       &--bot {
-        top: 16px;
+        top: 18px;
       }
     }
   }

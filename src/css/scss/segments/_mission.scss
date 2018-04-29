@@ -1,0 +1,10 @@
+.mission {
+  background: $white;
+  margin: -$offset auto 0 !important;
+  transform: skewY($skewDeg);
+
+  .section-inner {
+    padding: 80px 5% 60px;
+    transform: skewY(-$skewDeg);
+  }
+}

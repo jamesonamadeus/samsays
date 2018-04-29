@@ -1,84 +1,38 @@
-body {
-  margin: 0 auto;
-}
+.problem {
+  background: $cc-3;
+  margin-top: -70px !important;
 
-.main {
-  margin: 0 auto;
-}
-
-.section {
-  margin: 0 auto;
-  text-align: center;
-
-  &-inner {
-    padding: 50px 10%;
+  .section-inner {
+    padding: 120px 5% 100px;
   }
 
-  &-alt {
-    background: $color-primary;
+  .section-heading {
+    color: $white;
   }
 
-  &-heading {
-    @include font-size(42);
-    color: $black;
-    font-family: $font-primary-bold;
-    padding: 0;
-    margin: 0 auto 30px;
-    text-align: center;
+  &-primer {
+    color: $white;
   }
 
-  p {
-    margin: 0 auto 20px;
-    max-width: 600px;
-    text-align: center;
-  }
+  &-dataset {
+    @include flexbox(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    margin: 50px auto 0;
 
-  .btn {
-    width: 300px;
-  }
-}
+    &-element {
+      margin: 20px;
+      width: 33%;
 
-@media only screen and (max-width: $break-xlg) {
-  .section {
-    &-inner {
-      padding: 50px 5%;
-    }
-  }
-}
+      h3 {
+        @include font-size(28);
+        color: $white;
+        font-family: $font-primary-bold;
+      }
 
-@media only screen and (max-width: $break-lg) {
-  .section {
-    .heading {
-      @include font-size(32);
-    }
-
-    &-inner {
-      padding: 60px 3%;
-    }
-  }
-}
-
-@media only screen and (max-width: $break-md) {
-  .section {
-    &-inner {
-      padding: 60px 20px;
-    }
-
-    .heading {
-      @include font-size(28);
-      margin: 0 auto 20px;
-    }
-  }
-}
-
-@media only screen and (max-width: $break-sm) {
-  .section {
-    &-inner {
-      padding: 60px 15px;
-    }
-
-    .heading {
-      @include font-size(24);
+      p {
+        color: $white;
+      }
     }
   }
 }

@@ -19,7 +19,7 @@ body {
   }
 
   &-heading {
-    @include font-size(42);
+    @include font-size(48);
     color: $black;
     font-family: $font-primary-bold;
     padding: 0;

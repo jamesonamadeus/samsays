@@ -18,7 +18,6 @@ $offset: 34px;
     position: absolute;
     right: 0;
     top: -$offset;
-    transform: rotate(30deg);
     transform: skewY($skewDeg);
   }
 

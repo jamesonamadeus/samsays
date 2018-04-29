@@ -458,7 +458,7 @@ object {
     padding: 18px 34px 26px 45px; }
   .nav-menu {
     background: #24d6dc;
-    border: rgba(255, 255, 255, 0.5) solid 2px;
+    border: rgba(255, 255, 255, 0.5) solid 3px;
     border-radius: 50%;
     cursor: pointer;
     display: inline-block;
@@ -473,11 +473,11 @@ object {
     width: 65px;
     z-index: 20; }
     .nav-menu:hover, .nav-menu:active, .nav-menu:focus {
-      border: #2b2b2b solid 2px; }
+      border: #2b2b2b solid 3px; }
       .nav-menu:hover .nav-bun, .nav-menu:active .nav-bun, .nav-menu:focus .nav-bun {
         background: #2b2b2b; }
   .nav-contain.open .nav-menu {
-    border: #2b2b2b solid 2px !important; }
+    border: #2b2b2b solid 3px !important; }
   .nav-contain.open .nav-bun--top {
     background: #2b2b2b;
     top: 9px;
@@ -493,14 +493,14 @@ object {
     position: relative;
     transition: all 0.5s ease; }
     .nav-bun--top, .nav-bun--mid, .nav-bun--bot {
-      height: 2px;
-      width: 25px; }
+      height: 3px;
+      width: 32px; }
     .nav-bun--top {
       top: 0; }
     .nav-bun--mid {
-      top: 8px; }
+      top: 9px; }
     .nav-bun--bot {
-      top: 16px; } }
+      top: 18px; } }
 
 @keyframes slideInLeft {
   0% {
@@ -548,7 +548,6 @@ object {
     position: absolute;
     right: 0;
     top: -34px;
-    transform: rotate(30deg);
     transform: skewY(-3deg); }
   .hero-bg {
     background: url("../images/hero-lg.png") right center no-repeat;
@@ -717,59 +716,44 @@ object {
     font-size: 24px !important;
     font-size: 1.5rem !important; } }
 
-body {
-  margin: 0 auto; }
+.problem {
+  background: #7a7dd3;
+  margin-top: -70px !important; }
+  .problem .section-inner {
+    padding: 120px 5% 100px; }
+  .problem .section-heading {
+    color: #fff; }
+  .problem-primer {
+    color: #fff; }
+  .problem-dataset {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    margin: 50px auto 0; }
+    .problem-dataset-element {
+      margin: 20px;
+      width: 33%; }
+      .problem-dataset-element h3 {
+        font-size: 28px !important;
+        font-size: 1.75rem !important;
+        color: #fff;
+        font-family: "ProximaNova-Bold", sans-serif; }
+      .problem-dataset-element p {
+        color: #fff; }
 
-.main {
-  margin: 0 auto; }
-
-.section {
-  margin: 0 auto;
-  text-align: center; }
-  .section-inner {
-    padding: 50px 10%; }
-  .section-alt {
-    background: #24d6dc; }
-  .section-heading {
-    font-size: 42px !important;
-    font-size: 2.625rem !important;
-    color: #111;
-    font-family: "ProximaNova-Bold", sans-serif;
-    padding: 0;
-    margin: 0 auto 30px;
-    text-align: center; }
-  .section p {
-    margin: 0 auto 20px;
-    max-width: 600px;
-    text-align: center; }
-  .section .btn {
-    width: 300px; }
-
-@media only screen and (max-width: 1000px) {
-  .section-inner {
-    padding: 50px 5%; } }
-
-@media only screen and (max-width: 800px) {
-  .section .heading {
-    font-size: 32px !important;
-    font-size: 2rem !important; }
-  .section-inner {
-    padding: 60px 3%; } }
-
-@media only screen and (max-width: 600px) {
-  .section-inner {
-    padding: 60px 20px; }
-  .section .heading {
-    font-size: 28px !important;
-    font-size: 1.75rem !important;
-    margin: 0 auto 20px; } }
-
-@media only screen and (max-width: 480px) {
-  .section-inner {
-    padding: 60px 15px; }
-  .section .heading {
-    font-size: 24px !important;
-    font-size: 1.5rem !important; } }
+.mission {
+  background: #fff;
+  margin: -34px auto 0 !important;
+  transform: skewY(-3deg); }
+  .mission .section-inner {
+    padding: 80px 5% 60px;
+    transform: skewY(3deg); }
 
 h1 {
   color: #24d6dc; }
@@ -788,8 +772,8 @@ body {
   .section-alt {
     background: #24d6dc; }
   .section-heading {
-    font-size: 42px !important;
-    font-size: 2.625rem !important;
+    font-size: 48px !important;
+    font-size: 3rem !important;
     color: #111;
     font-family: "ProximaNova-Bold", sans-serif;
     padding: 0;
