@@ -1,0 +1,11 @@
+.footer {
+  @include flexbox(flex);
+  @include justify-content(space-between);
+  background: $cc-3;
+  padding: 20px;
+
+  p {
+    color: $white;
+    margin: 0;
+  }
+}

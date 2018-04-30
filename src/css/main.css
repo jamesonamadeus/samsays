@@ -220,6 +220,7 @@ html {
   background: transparent;
   border: 1px solid #24d6dc;
   color: #24d6dc;
+  cursor: pointer;
   display: inline-block;
   font-size: 100%;
   height: 44px;
@@ -520,6 +521,19 @@ object {
   .banner {
     padding: 3px 3px 0; } }
 
+.footer {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  background: #7a7dd3;
+  padding: 20px; }
+  .footer p {
+    color: #fff;
+    margin: 0; }
+
 .hero {
   -ms-flex-align: center;
   -webkit-align-items: center;
@@ -721,7 +735,7 @@ object {
   margin: -34px auto 0 !important;
   transform: skewY(-3deg); }
   .benefits .section-inner {
-    padding: 80px 3% 60px;
+    padding: 80px 3% 100px;
     transform: skewY(3deg); }
   .benefits .section-heading {
     color: #fff; }
@@ -786,8 +800,14 @@ object {
   margin: -34px auto 0 !important;
   transform: skewY(-3deg); }
   .mission .section-inner {
-    padding: 80px 5% 100px;
+    padding: 80px 5% 110px;
     transform: skewY(3deg); }
+
+.reminder {
+  background: #fff;
+  margin: 0 auto !important; }
+  .reminder .section-inner {
+    padding: 80px 3% 60px; }
 
 h1 {
   color: #24d6dc; }
