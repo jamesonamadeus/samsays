@@ -1,6 +1,7 @@
 # Exclude stuff 
 dist 
 node_modules
+ngrok
 
 # Exclude hidden OS files
 .DS_Store
