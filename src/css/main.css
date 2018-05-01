@@ -808,6 +808,19 @@ object {
   margin: 0 auto !important; }
   .reminder .section-inner {
     padding: 80px 3% 60px; }
+  .reminder-btn {
+    font-size: 32px !important;
+    font-size: 2rem !important;
+    background: #24d6dc;
+    border: 3px solid #111;
+    border-radius: 50px;
+    color: #fff;
+    text-shadow: 1px 2px 3px #111;
+    padding: 16px 20px 20px;
+    height: 80px;
+    margin: 5px 0 5px;
+    cursor: pointer;
+    width: 540px !important; }
 
 h1 {
   color: #24d6dc; }

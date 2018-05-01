@@ -5,4 +5,18 @@
   .section-inner {
     padding: 80px 3% 60px;
   }
+
+  &-btn {
+    @include font-size(32);
+    background: $cc-1;
+    border: 3px solid $black;
+    border-radius: 50px;
+    color: $white;
+    text-shadow: 1px 2px 3px $black;
+    padding: 16px 20px 20px;
+    height: 80px;
+    margin: 5px 0 5px;
+    cursor: pointer;
+    width: 540px !important;
+  }
 }
