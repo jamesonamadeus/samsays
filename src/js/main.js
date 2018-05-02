@@ -1,5 +1,5 @@
 //Change Navbar Background on Scroll
-window.onscroll = function() {
+window.onscroll = function () {
   var bnr = document.querySelector("#banner");
 
   if (window.pageYOffset >= 100) {
@@ -11,7 +11,19 @@ window.onscroll = function() {
   }
 };
 
-(function() {
+(function () {
+  //smooth scroll
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        top: 200,
+        behavior: 'smooth'
+      });
+    });
+  });
+
   //nav brgr
   var body = document.body;
   var linkToggle = document.getElementsByClassName("link-togg")[0];
@@ -43,16 +55,16 @@ window.onscroll = function() {
   }
 
   function toggle() {
-    [body, burgerContain, burgerNav].forEach(function(el) {
+    [body, burgerContain, burgerNav].forEach(function (el) {
       el.classList.toggle("open");
     });
   }
 
   // Lozad - Initialize library
   lozad(".lozad", {
-    load: function(el) {
+    load: function (el) {
       el.src = el.dataset.src;
-      el.onload = function() {
+      el.onload = function () {
         el.classList.add("fade");
       };
     }
