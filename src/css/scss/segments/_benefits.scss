@@ -21,12 +21,19 @@
   }
 
   &-icon {
+    @include flexbox(flex);
+    @include align-items(center);
+    @include justify-content(center);
     background: $white;
     border: 2px solid $cc-1;
     border-radius: 50%;
-    height: 120px;
+    height: 130px;
     margin: 0 auto;
-    width: 120px;
+    width: 130px;
+
+    i {
+      color: $cc-1;
+    }
   }
 
   &-element {
