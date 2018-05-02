@@ -15,7 +15,7 @@
   &-contain {
     @include flexbox(flex);
     @include align-items(flex-start);
-    @include justify-content(center);
+    @include justify-content(space-between);
     @include flex-wrap(wrap);
     margin: 50px auto 0;
   }
@@ -37,8 +37,8 @@
   }
 
   &-element {
-    margin: 10px 20px 45px;
-    width: 30%;
+    margin: 10px 15px 45px;
+    width: 29%;
 
     h3 {
       @include font-size(28);

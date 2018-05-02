@@ -746,9 +746,9 @@ object {
     -ms-flex-align: start;
     -webkit-align-items: flex-start;
     align-items: flex-start;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
     -ms-flex-wrap: wrap;
     -webkit-flex-wrap: wrap;
     flex-wrap: wrap;
@@ -772,8 +772,8 @@ object {
     .benefits-icon i {
       color: #24d6dc; }
   .benefits-element {
-    margin: 10px 20px 45px;
-    width: 30%; }
+    margin: 10px 15px 45px;
+    width: 29%; }
     .benefits-element h3 {
       font-size: 28px !important;
       font-size: 1.75rem !important;
