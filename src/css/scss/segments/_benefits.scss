@@ -1,5 +1,4 @@
 .benefits {
-  background: $cc-1;
   margin: -$offset auto 0 !important;
   transform: skewY($skewDeg);
 
@@ -24,31 +23,22 @@
     @include flexbox(flex);
     @include align-items(center);
     @include justify-content(center);
-    background: $white;
-    border: 2px solid $cc-1;
-    border-radius: 50%;
-    height: 130px;
-    margin: 0 auto;
-    width: 130px;
 
-    i {
-      color: $cc-1;
+    &-img {
+      height: 230px;
+      margin: 0 auto;
+      width: 230px;
     }
   }
 
   &-element {
-    margin: 10px 15px 45px;
-    width: 29%;
+    padding: 20px;
+    width: 30%;
 
     h3 {
       @include font-size(28);
-      color: $white !important;
       font-family: $font-primary-bold;
-      margin: 10px 0 -10px;
-    }
-
-    p {
-      color: $white;
+      margin: 10px 0 5px;
     }
   }
 }

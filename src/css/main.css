@@ -731,7 +731,6 @@ object {
     font-size: 1.5rem !important; } }
 
 .benefits {
-  background: #24d6dc;
   margin: -34px auto 0 !important;
   transform: skewY(-3deg); }
   .benefits .section-inner {
@@ -762,26 +761,19 @@ object {
     align-items: center;
     -ms-flex-pack: center;
     -webkit-justify-content: center;
-    justify-content: center;
-    background: #fff;
-    border: 2px solid #24d6dc;
-    border-radius: 50%;
-    height: 130px;
-    margin: 0 auto;
-    width: 130px; }
-    .benefits-icon i {
-      color: #24d6dc; }
+    justify-content: center; }
+    .benefits-icon-img {
+      height: 230px;
+      margin: 0 auto;
+      width: 230px; }
   .benefits-element {
-    margin: 10px 15px 45px;
-    width: 29%; }
+    padding: 20px;
+    width: 30%; }
     .benefits-element h3 {
       font-size: 28px !important;
       font-size: 1.75rem !important;
-      color: #fff !important;
       font-family: "ProximaNova-Bold", sans-serif;
-      margin: 10px 0 -10px; }
-    .benefits-element p {
-      color: #fff; }
+      margin: 10px 0 5px; }
 
 .problem {
   background: #7a7dd3;
