@@ -23,11 +23,19 @@
     @include flexbox(flex);
     @include align-items(center);
     @include justify-content(center);
+    max-height: 230px;
 
     &-img {
-      height: 230px;
       margin: 0 auto;
       width: 230px;
+
+      &-inf {
+        width: 243px;
+      }
+
+      &-pro {
+        width: 220px;
+      }
     }
   }
 
