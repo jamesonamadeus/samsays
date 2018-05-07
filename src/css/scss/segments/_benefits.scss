@@ -1,14 +1,6 @@
 .benefits {
-  margin: -$offset auto 0 !important;
-  transform: skewY($skewDeg);
 
   .section-inner {
-    padding: 120px 3% 100px;
-    transform: skewY(-$skewDeg);
-  }
-
-  .section-heading {
-    color: $white;
   }
 
   &-contain {
@@ -23,25 +15,25 @@
     @include flexbox(flex);
     @include align-items(center);
     @include justify-content(center);
-    max-height: 230px;
+    max-height: 320px;
 
     &-img {
       margin: 0 auto;
-      width: 230px;
+      width: 310px;
 
       &-inf {
-        width: 243px;
+        width: 320px;
       }
 
       &-pro {
-        width: 220px;
+        width: 303px;
       }
     }
   }
 
   &-element {
     padding: 20px;
-    width: 30%;
+    width: 50%;
 
     h3 {
       @include font-size(28);

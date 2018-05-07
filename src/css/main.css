@@ -730,54 +730,48 @@ object {
     font-size: 24px !important;
     font-size: 1.5rem !important; } }
 
-.benefits {
-  margin: -34px auto 0 !important;
-  transform: skewY(-3deg); }
-  .benefits .section-inner {
-    padding: 120px 3% 100px;
-    transform: skewY(3deg); }
-  .benefits .section-heading {
-    color: #fff; }
-  .benefits-contain {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -ms-flex-align: start;
-    -webkit-align-items: flex-start;
-    align-items: flex-start;
-    -ms-flex-pack: justify;
-    -webkit-justify-content: space-between;
-    justify-content: space-between;
-    -ms-flex-wrap: wrap;
-    -webkit-flex-wrap: wrap;
-    flex-wrap: wrap;
-    margin: 50px auto 0; }
-  .benefits-icon {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    max-height: 230px; }
-    .benefits-icon-img {
-      margin: 0 auto;
-      width: 230px; }
-      .benefits-icon-img-inf {
-        width: 243px; }
-      .benefits-icon-img-pro {
-        width: 220px; }
-  .benefits-element {
-    padding: 20px;
-    width: 30%; }
-    .benefits-element h3 {
-      font-size: 28px !important;
-      font-size: 1.75rem !important;
-      font-family: "ProximaNova-Bold", sans-serif;
-      margin: 10px 0 5px; }
+.benefits-contain {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: start;
+  -webkit-align-items: flex-start;
+  align-items: flex-start;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -ms-flex-wrap: wrap;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 50px auto 0; }
+
+.benefits-icon {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  max-height: 320px; }
+  .benefits-icon-img {
+    margin: 0 auto;
+    width: 310px; }
+    .benefits-icon-img-inf {
+      width: 320px; }
+    .benefits-icon-img-pro {
+      width: 303px; }
+
+.benefits-element {
+  padding: 20px;
+  width: 50%; }
+  .benefits-element h3 {
+    font-size: 28px !important;
+    font-size: 1.75rem !important;
+    font-family: "ProximaNova-Bold", sans-serif;
+    margin: 10px 0 5px; }
 
 .problem {
   background: #7a7dd3;
@@ -821,8 +815,6 @@ object {
 .reminder {
   background: #fff;
   margin: 0 auto !important; }
-  .reminder .section-inner {
-    padding: 80px 3% 60px; }
   .reminder-btn {
     font-size: 32px !important;
     font-size: 2rem !important;
@@ -850,7 +842,7 @@ body {
   margin: 0 auto;
   text-align: center; }
   .section-inner {
-    padding: 50px 10%; }
+    padding: 50px 4%; }
   .section-alt {
     background: #24d6dc; }
   .section-heading {
