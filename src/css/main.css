@@ -758,15 +758,16 @@ object {
   max-height: 270px; }
   .benefits-icon-img {
     margin: 0 auto;
-    width: 270px; }
+    width: 260px; }
     .benefits-icon-img-com {
-      width: 285px; }
-    .benefits-icon-img-inf {
-      width: 290px; }
-    .benefits-icon-img-pro {
       width: 270px; }
+    .benefits-icon-img-inf {
+      width: 270px; }
+    .benefits-icon-img-pro {
+      width: 255px; }
 
 .benefits-element {
+  margin: 0 auto 20px;
   padding: 20px;
   width: 30%; }
   .benefits-element h3 {
@@ -839,7 +840,7 @@ body {
   margin: 0 auto;
   text-align: center; }
   .section-inner {
-    padding: 50px 4%; }
+    padding: 50px 4% 30px; }
   .section-alt {
     background: #24d6dc; }
   .section-heading {
