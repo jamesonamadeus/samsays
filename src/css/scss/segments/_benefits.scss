@@ -15,25 +15,29 @@
     @include flexbox(flex);
     @include align-items(center);
     @include justify-content(center);
-    max-height: 320px;
+    max-height: 270px;
 
     &-img {
       margin: 0 auto;
-      width: 310px;
+      width: 270px;
+
+      &-com {
+        width: 285px;
+      }
 
       &-inf {
-        width: 320px;
+        width: 290px;
       }
 
       &-pro {
-        width: 303px;
+        width: 270px;
       }
     }
   }
 
   &-element {
     padding: 20px;
-    width: 50%;
+    width: 30%;
 
     h3 {
       @include font-size(28);

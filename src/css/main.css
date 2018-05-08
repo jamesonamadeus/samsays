@@ -755,18 +755,20 @@ object {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  max-height: 320px; }
+  max-height: 270px; }
   .benefits-icon-img {
     margin: 0 auto;
-    width: 310px; }
+    width: 270px; }
+    .benefits-icon-img-com {
+      width: 285px; }
     .benefits-icon-img-inf {
-      width: 320px; }
+      width: 290px; }
     .benefits-icon-img-pro {
-      width: 303px; }
+      width: 270px; }
 
 .benefits-element {
   padding: 20px;
-  width: 50%; }
+  width: 30%; }
   .benefits-element h3 {
     font-size: 28px !important;
     font-size: 1.75rem !important;
@@ -805,12 +807,7 @@ object {
         color: #fff; }
 
 .mission {
-  background: #fff;
-  margin: -34px auto 0 !important;
-  transform: skewY(-3deg); }
-  .mission .section-inner {
-    padding: 120px 5% 110px;
-    transform: skewY(3deg); }
+  background: #fff; }
 
 .reminder {
   background: #fff;
