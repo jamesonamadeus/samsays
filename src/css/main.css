@@ -845,19 +845,13 @@ object {
 .question {
   background: #24d6dc;
   margin: 0 auto !important; }
-  .question-btn {
-    font-size: 32px !important;
-    font-size: 2rem !important;
-    background: #24d6dc;
-    border: 3px solid #111;
-    border-radius: 50px;
+  .question .section-heading {
     color: #fff;
-    text-shadow: 1px 2px 3px #111;
-    padding: 16px 20px 20px;
-    height: 80px;
-    margin: 5px 0 5px;
-    cursor: pointer;
-    width: 540px !important; }
+    margin: 0 auto 20px; }
+  .question-primer {
+    font-size: 24px !important;
+    font-size: 1.5rem !important;
+    color: #fff; }
 
 h1 {
   color: #24d6dc; }
