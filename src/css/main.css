@@ -742,8 +742,7 @@ object {
   justify-content: space-between;
   -ms-flex-wrap: wrap;
   -webkit-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 50px auto 0; }
+  flex-wrap: wrap; }
 
 .benefits-icon {
   display: -ms-flexbox;
@@ -767,8 +766,8 @@ object {
       width: 255px; }
 
 .benefits-element {
-  margin: 0 auto 20px;
-  padding: 20px;
+  margin: 0 auto 40px;
+  padding: 0 20px 0;
   width: 30%; }
   .benefits-element h3 {
     font-size: 28px !important;
@@ -776,16 +775,48 @@ object {
     font-family: "ProximaNova-Bold", sans-serif;
     margin: 10px 0 5px; }
 
-.problem {
-  background: #7a7dd3;
-  margin-top: -70px !important; }
-  .problem .section-inner {
-    padding: 120px 3% 100px; }
-  .problem .section-heading {
+.problem-dataset {
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  margin: 50px auto 0; }
+  .problem-dataset-element {
+    margin: 20px;
+    width: 33%; }
+    .problem-dataset-element h3 {
+      font-size: 28px !important;
+      font-size: 1.75rem !important;
+      font-family: "ProximaNova-Bold", sans-serif; }
+
+.mission {
+  background: #24d6dc;
+  background: -moz-linear-gradient(135deg, #24d6dc 0%, #7a7dd3 80%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #24d6dc), color-stop(100%, #7a7dd3));
+  background: -webkit-linear-gradient(135deg, #24d6dc 0%, #7a7dd3 80%);
+  background: -o-linear-gradient(135deg, #24d6dc 0%, #7a7dd3 80%);
+  background: -ms-linear-gradient(135deg, #24d6dc 0%, #7a7dd3 80%);
+  background: linear-gradient(135deg, #24d6dc 0%, #7a7dd3 80%);
+  bottom: 34px;
+  left: 0;
+  right: 0;
+  top: -34px;
+  transform: skewY(-3deg); }
+  .mission .section-inner {
+    padding: 100px 4% 120px;
+    bottom: -34px;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform: skewY(3deg); }
+  .mission .section-heading {
     color: #fff; }
-  .problem-primer {
-    color: #fff; }
-  .problem-dataset {
+  .mission-content {
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
@@ -795,20 +826,18 @@ object {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
-    margin: 50px auto 0; }
-    .problem-dataset-element {
-      margin: 20px;
-      width: 33%; }
-      .problem-dataset-element h3 {
-        font-size: 28px !important;
-        font-size: 1.75rem !important;
-        color: #fff;
-        font-family: "ProximaNova-Bold", sans-serif; }
-      .problem-dataset-element p {
-        color: #fff; }
-
-.mission {
-  background: #fff; }
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row; }
+  .mission-primer {
+    position: absolute;
+    width: 100%; }
+    .mission-primer p {
+      font-size: 30px !important;
+      font-size: 1.875rem !important;
+      color: #fff; }
+  .mission-image {
+    width: 100%; }
 
 .reminder {
   background: #fff;
@@ -840,7 +869,7 @@ body {
   margin: 0 auto;
   text-align: center; }
   .section-inner {
-    padding: 50px 4% 30px; }
+    padding: 80px 4%; }
   .section-alt {
     background: #24d6dc; }
   .section-heading {
@@ -849,7 +878,7 @@ body {
     color: #111;
     font-family: "ProximaNova-Bold", sans-serif;
     padding: 0;
-    margin: 0 auto 30px;
+    margin: 0 auto 60px;
     text-align: center; }
   .section p {
     margin: 0 auto 20px;

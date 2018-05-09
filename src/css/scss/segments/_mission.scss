@@ -1,10 +1,46 @@
 .mission {
-  background: $white;
+  // background: $cc-3;
+  @include gradient-linear-adj($cc-1, $cc-3);
+  bottom: $offset;
+  left: 0;
+  right: 0;
+  top: -$offset;
+  transform: skewY($skewDeg);
 
-  .section-inner {
+  .section {
+    &-inner {
+      padding: 100px 4% 120px;
+      bottom: -$offset;
+      left: 0;
+      right: 0;
+      top: 0;
+      transform: skewY(-$skewDeg);
+    }
+
+    &-heading {
+      color: $white;
+    }
+  }
+
+  &-content {
+    @include flexbox(flex);
+    @include align-items(center);
+    @include justify-content(center);
+    @include flex-direction(row);
   }
 
   &-primer {
+    position: absolute;
+    width: 100%;
 
+    p {
+      @include font-size(30);
+      color: $white;
+      // max-width: 0px !important;
+    }
+  }
+
+  &-image {
+    width: 100%;
   }
 }

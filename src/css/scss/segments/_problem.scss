@@ -1,17 +1,12 @@
 .problem {
-  background: $cc-3;
-  margin-top: -70px !important;
 
   .section-inner {
-    padding: 120px 3% 100px;
   }
 
   .section-heading {
-    color: $white;
   }
 
   &-primer {
-    color: $white;
   }
 
   &-dataset {
@@ -26,12 +21,10 @@
 
       h3 {
         @include font-size(28);
-        color: $white;
         font-family: $font-primary-bold;
       }
 
       p {
-        color: $white;
       }
     }
   }
