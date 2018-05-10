@@ -15,6 +15,10 @@
   &-primer {
     @include font-size(24);
     color: $white;
+
+    a {
+      color: $cc-3;
+    }
   }
 
 }
