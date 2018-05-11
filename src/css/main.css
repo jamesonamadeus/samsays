@@ -790,12 +790,21 @@ object {
 .benefits-element {
   margin: 0 auto 40px;
   padding: 0 20px 0;
-  width: 30%; }
+  width: 33%; }
   .benefits-element h3 {
     font-size: 28px !important;
     font-size: 1.75rem !important;
     font-family: "ProximaNova-Bold", sans-serif;
     margin: 10px 0 5px; }
+
+@media only screen and (max-width: 800px) {
+  .benefits-element {
+    padding: 0 10px 0;
+    width: 50%; } }
+
+@media only screen and (max-width: 600px) {
+  .benefits-element {
+    width: 100%; } }
 
 .problem-dataset {
   display: -ms-flexbox;

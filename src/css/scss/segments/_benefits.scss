@@ -30,12 +30,29 @@
   &-element {
     margin: 0 auto 40px;
     padding: 0 20px 0;
-    width: 30%;
+    width: 33%;
 
     h3 {
       @include font-size(28);
       font-family: $font-primary-bold;
       margin: 10px 0 5px;
+    }
+  }
+}
+
+@media only screen and (max-width: $break-lg) {
+  .benefits {
+    &-element {
+      padding: 0 10px 0;
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: $break-md) {
+  .benefits {
+    &-element {
+      width: 100%;
     }
   }
 }
