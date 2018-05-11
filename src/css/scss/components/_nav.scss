@@ -24,18 +24,41 @@
 
       &-list {
         .nav-link {
+          @include transition(all 1s);
+          @include font-size(22);
           color: $color-primary;
+          display: block;
+          font-family: $font-primary;
+          height: 60px;
+          padding: 15px 20px 10px;
+          position: relative;
+          text-decoration: none;
+          width: 100%;
 
           &:hover,
-          &:focus,
-          &:active {
-            background: $white;
-            color: $color-secondary;
+          &:focus {
+            color: #fff !important;
+            z-index: 30;
           }
-        }
-
-        .nav-cta {
-          color: $white;
+      
+          &:after {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            content: "";
+            height: 3px;
+            margin: 0;
+            opacity: 0;
+          }
+      
+          &:hover:after {
+            @include animation(fill 0.7s forwards);
+            background: $color-primary !important;
+            z-index: -1;
+            opacity: 1;
+            width: 100%;
+          }
         }
 
         .submenu {
@@ -44,7 +67,6 @@
 
         .submenu-item .nav-link {
           display: block;
-          background: $white !important;
         }
 
         > .nav-item {
@@ -55,6 +77,16 @@
           }
         }
       }
+
+      &-cta {
+        background: $color-primary;
+        border: 3px solid $black;
+        color: $white !important;
+        text-shadow: 1px 2px 3px $black;
+        padding: 11px 25px 13px !important;
+        width: 180px;
+      }
+
     }
 
     // Dropdown
@@ -150,13 +182,19 @@
     }
   }
 
-  &-cta {
+  .nav-cta {
     background: $color-primary;
     border: 3px solid $black;
     color: $white;
     text-shadow: 1px 2px 3px $black;
     padding: 11px 25px 13px !important;
-    width: 180px;
+
+    &:hover,
+    &:active,
+    &:focus {
+      background: $white;
+      color: $color-primary;
+    }
   }
 }
 
@@ -316,29 +354,6 @@ $brgr-transition: all $brgr-transition-speed ease;
         top: 18px;
       }
     }
-  }
-}
-
-//Nav Keyframes
-@keyframes slideInLeft {
-  0% {
-    transform: translate3d(250px, 0, 0);
-    visibility: visible;
-  }
-
-  100% {
-    transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes slideOutLeft {
-  0% {
-    transform: translate3d(0, 0, 0);
-  }
-
-  100% {
-    transform: translate3d(250px, 0, 0);
-    visibility: hidden;
   }
 }
 
