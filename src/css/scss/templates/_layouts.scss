@@ -48,8 +48,8 @@ body {
 
 @media only screen and (max-width: $break-lg) {
   .section {
-    .heading {
-      @include font-size(32);
+    &-heading {
+      @include font-size(42);
     }
 
     &-inner {
@@ -64,8 +64,8 @@ body {
       padding: 60px 20px;
     }
 
-    .heading {
-      @include font-size(28);
+    &-heading {
+      @include font-size(38);
       margin: 0 auto 20px;
     }
   }
@@ -77,8 +77,8 @@ body {
       padding: 60px 15px;
     }
 
-    .heading {
-      @include font-size(24);
+    &-heading {
+      @include font-size(32);
     }
   }
 }

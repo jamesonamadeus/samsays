@@ -806,6 +806,13 @@ object {
   .benefits-element {
     width: 100%; } }
 
+@media only screen and (max-width: 480px) {
+  .benefits-element h3 {
+    font-size: 24px !important;
+    font-size: 1.5rem !important; }
+  .benefits-element:last-of-type {
+    margin-bottom: 20px; } }
+
 .problem-dataset {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -922,23 +929,23 @@ body {
     padding: 50px 5%; } }
 
 @media only screen and (max-width: 800px) {
-  .section .heading {
-    font-size: 32px !important;
-    font-size: 2rem !important; }
+  .section-heading {
+    font-size: 42px !important;
+    font-size: 2.625rem !important; }
   .section-inner {
     padding: 60px 3%; } }
 
 @media only screen and (max-width: 600px) {
   .section-inner {
     padding: 60px 20px; }
-  .section .heading {
-    font-size: 28px !important;
-    font-size: 1.75rem !important;
+  .section-heading {
+    font-size: 38px !important;
+    font-size: 2.375rem !important;
     margin: 0 auto 20px; } }
 
 @media only screen and (max-width: 480px) {
   .section-inner {
     padding: 60px 15px; }
-  .section .heading {
-    font-size: 24px !important;
-    font-size: 1.5rem !important; } }
+  .section-heading {
+    font-size: 32px !important;
+    font-size: 2rem !important; } }

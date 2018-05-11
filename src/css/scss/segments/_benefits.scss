@@ -56,3 +56,17 @@
     }
   }
 }
+
+@media only screen and (max-width: $break-sm) {
+  .benefits {
+    &-element {
+      h3 {
+        @include font-size(24);
+      }
+
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+    }
+  }
+}
