@@ -784,12 +784,8 @@ object {
   .benefits-icon-img {
     margin: 0 auto;
     width: 260px; }
-    .benefits-icon-img-com {
-      width: 270px; }
     .benefits-icon-img-inf {
       width: 270px; }
-    .benefits-icon-img-pro {
-      width: 255px; }
 
 .benefits-element {
   margin: 0 auto 40px;
@@ -894,7 +890,7 @@ body {
   margin: 0 auto;
   text-align: center; }
   .section-inner {
-    padding: 80px 4% 60px; }
+    padding: 70px 4% 60px; }
   .section-alt {
     background: #24d6dc; }
   .section-heading {
