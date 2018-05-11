@@ -11,18 +11,19 @@ window.onscroll = function () {
   }
 };
 
-(function () {
-  //smooth scroll
-  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-      e.preventDefault();
+//smooth scroll
+// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+//   anchor.addEventListener('click', function (e) {
+//     e.preventDefault();
 
-      document.querySelector(this.getAttribute('href')).scrollIntoView({
-        top: 200,
-        behavior: 'smooth'
-      });
-    });
-  });
+//     document.querySelector(this.getAttribute('href')).scrollIntoView({
+//       top: 200,
+//       behavior: 'smooth'
+//     });
+//   });
+// });
+
+(function () {
 
   //nav brgr
   var body = document.body;
