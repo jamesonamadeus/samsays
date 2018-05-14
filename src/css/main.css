@@ -804,14 +804,18 @@ object {
 
 @media only screen and (max-width: 600px) {
   .benefits-element {
-    width: 100%; } }
+    width: 100%; }
+  .benefits .section-inner {
+    padding: 60px 20px 15px; } }
 
 @media only screen and (max-width: 480px) {
   .benefits-element h3 {
     font-size: 24px !important;
     font-size: 1.5rem !important; }
   .benefits-element:last-of-type {
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+  .benefits .section-inner {
+    padding: 60px 15px 30px; } }
 
 .problem-dataset {
   display: -ms-flexbox;
@@ -880,6 +884,35 @@ object {
   .mission-image {
     width: 80%; }
 
+@media only screen and (max-width: 800px) {
+  .mission .section-inner {
+    padding: 80px 3% 65px; }
+  .mission-primer {
+    padding: 0 20px; }
+    .mission-primer p {
+      font-size: 28px !important;
+      font-size: 1.75rem !important; }
+  .mission-image {
+    width: 100%; } }
+
+@media only screen and (max-width: 600px) {
+  .mission .section-inner {
+    padding: 60px 20px 55px; }
+  .mission-primer {
+    padding: 0 10px; }
+    .mission-primer p {
+      font-size: 24px !important;
+      font-size: 1.5rem !important; } }
+
+@media only screen and (max-width: 480px) {
+  .mission .section-inner {
+    padding: 55px 15px 55px; }
+  .mission-primer {
+    padding: 0 10px; }
+    .mission-primer p {
+      font-size: 24px !important;
+      font-size: 1.5rem !important; } }
+
 .question {
   background: #24d6dc;
   margin: 0 auto !important; }
@@ -941,7 +974,7 @@ body {
   .section-heading {
     font-size: 38px !important;
     font-size: 2.375rem !important;
-    margin: 0 auto 20px; } }
+    margin: 0 auto 40px; } }
 
 @media only screen and (max-width: 480px) {
   .section-inner {

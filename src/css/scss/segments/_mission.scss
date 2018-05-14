@@ -1,5 +1,4 @@
 .mission {
-  // background: $cc-3;
   @include gradient-linear-adj($cc-1, $cc-3);
   bottom: $offset;
   left: 0;
@@ -45,5 +44,64 @@
 
   &-image {
     width: 80%;
+  }
+}
+
+@media only screen and (max-width: $break-lg) {
+  .mission {
+
+    .section {
+      &-inner {
+        padding: 80px 3% 65px;
+      }
+    }
+
+    &-primer {
+      padding: 0 20px;
+
+      p{
+        @include font-size(28);
+      }
+    }
+
+    &-image {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: $break-md) {
+  .mission {
+    .section {
+      &-inner {
+        padding: 60px 20px 55px;
+      }
+    }
+
+    &-primer {
+      padding: 0 10px;
+
+      p{
+        @include font-size(24);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $break-sm) {
+  .mission {
+    .section {
+      &-inner {
+        padding: 55px 15px 55px;
+      }
+    }
+
+    &-primer {
+      padding: 0 10px;
+
+      p{
+        @include font-size(24);
+      }
+    }
   }
 }

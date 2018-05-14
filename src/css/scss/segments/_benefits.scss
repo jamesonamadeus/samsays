@@ -54,6 +54,10 @@
     &-element {
       width: 100%;
     }
+
+    .section-inner {
+      padding: 60px 20px 15px;
+    }
   }
 }
 
@@ -67,6 +71,10 @@
       &:last-of-type {
         margin-bottom: 20px;
       }
+    }
+
+    .section-inner {
+      padding: 60px 15px 30px;
     }
   }
 }
