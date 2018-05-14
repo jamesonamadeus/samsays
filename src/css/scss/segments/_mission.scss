@@ -18,6 +18,8 @@
 
     &-heading {
       color: $white;
+      text-shadow: 1px 2px 3px $color-text,
+                 -1px -1px 3px $color-text;
     }
   }
 
@@ -100,7 +102,7 @@
       padding: 0 10px;
 
       p{
-        @include font-size(24);
+        @include font-size(20);
       }
     }
   }
