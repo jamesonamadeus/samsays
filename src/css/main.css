@@ -759,7 +759,7 @@ object {
     font-size: 1.5rem !important; } }
 
 .benefits .section-inner {
-  padding: 80px 4% 30px; }
+  padding: 55px 4% 5px; }
 
 .benefits-contain {
   display: -ms-flexbox;
@@ -800,27 +800,30 @@ object {
     font-size: 28px !important;
     font-size: 1.75rem !important;
     font-family: "ProximaNova-Bold", sans-serif;
-    margin: 10px 0 5px; }
+    margin: 20px 0 5px; }
 
 @media only screen and (max-width: 800px) {
+  .benefits .section-inner {
+    padding: 45px 3% 0; }
   .benefits-element {
     padding: 0 10px 0;
     width: 50%; } }
 
 @media only screen and (max-width: 600px) {
   .benefits-element {
+    padding: 0;
     width: 100%; }
   .benefits .section-inner {
-    padding: 60px 20px 15px; } }
+    padding: 45px 20px 0; } }
 
 @media only screen and (max-width: 480px) {
   .benefits-element h3 {
     font-size: 24px !important;
     font-size: 1.5rem !important; }
   .benefits-element:last-of-type {
-    margin-bottom: 20px; }
+    margin-bottom: 0; }
   .benefits .section-inner {
-    padding: 60px 15px 30px; } }
+    padding: 45px 15px 30px; } }
 
 .problem-dataset {
   display: -ms-flexbox;
@@ -991,7 +994,7 @@ body {
   .section-heading {
     font-size: 38px !important;
     font-size: 2.375rem !important;
-    margin: 0 auto 40px; } }
+    margin: 0 auto 35px; } }
 
 @media only screen and (max-width: 480px) {
   .section-inner {
