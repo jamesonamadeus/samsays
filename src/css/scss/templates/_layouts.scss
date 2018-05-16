@@ -11,7 +11,7 @@ body {
   text-align: center;
 
   &-inner {
-    padding: 70px 4% 60px;
+    padding: 50px 4% 60px;
   }
 
   &-alt {
@@ -41,7 +41,7 @@ body {
 @media only screen and (max-width: $break-xlg) {
   .section {
     &-inner {
-      padding: 50px 5%;
+      padding: 50px 3% 60px;
     }
   }
 }
@@ -53,7 +53,7 @@ body {
     }
 
     &-inner {
-      padding: 60px 3%;
+      padding: 40px 3% 50px;
     }
   }
 }
@@ -61,7 +61,7 @@ body {
 @media only screen and (max-width: $break-md) {
   .section {
     &-inner {
-      padding: 60px 20px;
+      padding: 40px 20px 50px;
     }
 
     &-heading {
@@ -74,7 +74,7 @@ body {
 @media only screen and (max-width: $break-sm) {
   .section {
     &-inner {
-      padding: 60px 15px;
+      padding: 40px 15px 50px;
     }
 
     &-heading {

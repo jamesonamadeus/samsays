@@ -928,9 +928,20 @@ object {
   .question-primer {
     font-size: 24px !important;
     font-size: 1.5rem !important;
-    color: #fff; }
+    color: #fff;
+    margin: 0 auto !important; }
     .question-primer a {
       color: #7a7dd3; }
+
+@media only screen and (max-width: 600px) {
+  .question-primer {
+    font-size: 20px !important;
+    font-size: 1.25rem !important; } }
+
+@media only screen and (max-width: 480px) {
+  .question-primer {
+    font-size: 18px !important;
+    font-size: 1.125rem !important; } }
 
 h1 {
   color: #24d6dc; }
@@ -945,7 +956,7 @@ body {
   margin: 0 auto;
   text-align: center; }
   .section-inner {
-    padding: 70px 4% 60px; }
+    padding: 50px 4% 60px; }
   .section-alt {
     background: #24d6dc; }
   .section-heading {
@@ -965,18 +976,18 @@ body {
 
 @media only screen and (max-width: 1000px) {
   .section-inner {
-    padding: 50px 5%; } }
+    padding: 50px 3% 60px; } }
 
 @media only screen and (max-width: 800px) {
   .section-heading {
     font-size: 42px !important;
     font-size: 2.625rem !important; }
   .section-inner {
-    padding: 60px 3%; } }
+    padding: 40px 3% 50px; } }
 
 @media only screen and (max-width: 600px) {
   .section-inner {
-    padding: 60px 20px; }
+    padding: 40px 20px 50px; }
   .section-heading {
     font-size: 38px !important;
     font-size: 2.375rem !important;
@@ -984,7 +995,7 @@ body {
 
 @media only screen and (max-width: 480px) {
   .section-inner {
-    padding: 60px 15px; }
+    padding: 40px 15px 50px; }
   .section-heading {
     font-size: 32px !important;
     font-size: 2rem !important; } }
