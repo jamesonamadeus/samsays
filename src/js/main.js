@@ -11,23 +11,11 @@ window.onscroll = function () {
   }
 };
 
-//smooth scroll
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//   anchor.addEventListener('click', function (e) {
-//     e.preventDefault();
-
-//     document.querySelector(this.getAttribute('href')).scrollIntoView({
-//       top: 200,
-//       behavior: 'smooth'
-//     });
-//   });
-// });
-
 (function () {
-
   //nav brgr
   var body = document.body;
   var linkToggle = document.getElementsByClassName("link-togg")[0];
+  var bannerNav = document.getElementsByClassName("banner")[0];
   var navToggle = document.getElementsByClassName("nav-togg")[0];
   var burgerMenu = document.getElementsByClassName("nav-menu")[0];
   var burgerContain = document.getElementsByClassName("nav-contain")[0];
@@ -56,7 +44,7 @@ window.onscroll = function () {
   }
 
   function toggle() {
-    [body, burgerContain, burgerNav].forEach(function (el) {
+    [body, bannerNav, burgerContain, burgerNav].forEach(function (el) {
       el.classList.toggle("open");
     });
   }
@@ -71,3 +59,10 @@ window.onscroll = function () {
     }
   }).observe();
 })();
+
+//Toggle Nav from Links
+$(".link-togg").on("click", function () {
+  $("body").removeClass("open");
+  $(".nav-contain").removeClass("open");
+  $(".nav-list").removeClass("open");
+});

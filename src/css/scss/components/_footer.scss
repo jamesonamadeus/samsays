@@ -9,3 +9,18 @@
     margin: 0;
   }
 }
+
+@media only screen and (max-width: $break-md) {
+  .footer {
+    @include flexbox(flex);
+    @include justify-content(center);
+    @include align-items(center);
+    @include flex-direction(column-reverse);
+
+    p {
+      &:last-child {
+        margin: 0 auto 5px;
+      }
+    }
+  }
+}
