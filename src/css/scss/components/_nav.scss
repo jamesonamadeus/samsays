@@ -1,108 +1,13 @@
-.nav {
-  &-toggle {
-    padding: 0 !important;
-    margin: 0 !important;
-  }
-
-  &-list {
-    display: block;
-    margin: 0 auto;
-    padding: 0;
-    z-index: 999999;
-  }
-
-  &-item {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
-    border-top-left-radius: 5px;
-    border-top-right-radius: 5px;
-    padding: 18px 18px 16px 14px;
-
-    &:hover,
-    &:active,
-    &:focus {
-      background: rgba(77, 76, 89, 0.9);
-
-      .nav-link-hv {
-        color: $color-primary;
-      }
-
-      .dropdown-arrow {
-        border-top: 6px solid $color-primary;
-      }
-    }
-
-    &-cta {
-      padding: 0 !important;
-
-      &-adj {
-        margin-left: 5px;
-      }
-    }
-  }
-
-  &-link {
-    color: $white;
-    display: inline;
-    text-decoration: none;
-    width: 100%;
-  }
-
-  &-item-alt,
-  &-link-alt {
-    &:hover {
-      background: transparent !important;
-    }
-  }
-
-  &-cta {
-    @include font-size(16);
-    @include transition(all 0.5s ease);
-    color: $white !important;
-    background: darken($color-primary, 10%);
-    border-radius: 5px;
-    border: 1px solid $white;
-    font-family: $font-primary;
-    padding: 16px 13px 13px;
-    margin: 0;
-
-    &:hover,
-    &:focus {
-      background: $white !important;
-      color: $color-text !important;
-
-      .nav-toggle {
-        color: $white !important;
-      }
-    }
-
-    &-adj {
-      background: darken($color-primary, 5%);
-    }
-  }
-
-  &-toggle {
-    padding: 16px 16px 12px !important;
-  }
-}
-
 .banner {
   @include flexbox(flex);
-  @include align-items(flex-end);
-  @include flex-direction(column);
+  @include align-items(center);
+  @include justify-content(space-between);
+  @include flex-direction(row);
+  padding: 15px;
   position: fixed;
   top: 0;
   width: 100%;
   z-index: 99;
-
-  &-inner {
-    @include flexbox(flex);
-    @include justify-content(space-between);
-    padding: 3px 10px 0;
-    border-bottom: 1px solid transparent;
-    width: 100%;
-  }
 
   &--top {
     background: transparent;
@@ -157,15 +62,6 @@
       }
     }
 
-    // Dropdown
-    .dropdown-arrow {
-      border-top: 6px solid $color-primary;
-    }
-
-    .dropdown:hover > .submenu {
-      display: block;
-    }
-
     // Logo Swap
     .logo-img {
       display: none;
@@ -185,66 +81,85 @@
   }
 }
 
-// Dropdown
-.nav-list .submenu {
-  display: none;
-}
+.nav {
+  &-toggle {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
 
-.dropdown:hover > .submenu {
-  display: block;
-}
-
-.submenu {
-  border: 1px solid $color-primary;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
-  margin: 16px auto 0;
-  padding: 0px;
-  position: absolute;
-  left: 0px;
-  list-style-type: none;
-  display: block;
-  width: 100%;
-  z-index: 9;
+  &-list {
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 999999;
+  }
 
   &-item {
-    display: block;
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    // padding: 18px 18px 16px 14px;
 
     &:hover,
     &:active,
     &:focus {
-      .nav-link {
-        color: $color-primary;
+
+    }
+
+    &-cta {
+      padding: 0 !important;
+
+      &-adj {
+        margin-left: 5px;
+      }
+    }
+  }
+
+  &-link {
+    color: $white;
+    display: inline;
+    text-decoration: none;
+    width: 100%;
+  }
+
+  &-item-alt,
+  &-link-alt {
+    &:hover {
+      background: transparent !important;
+    }
+  }
+
+  &-cta {
+    @include font-size(16);
+    @include transition(all 0.5s ease);
+    color: $white !important;
+    background: darken($color-primary, 10%);
+    border-radius: 5px;
+    border: 1px solid $white;
+    font-family: $font-primary;
+    padding: 16px 13px 13px;
+    margin: 0;
+
+    &:hover,
+    &:focus {
+      background: $white !important;
+      color: $color-text !important;
+
+      .nav-toggle {
+        color: $white !important;
       }
     }
 
-    .nav-link {
-      border-bottom: 1px solid $color-primary;
-      display: block;
-      background: rgba(77, 76, 89, 0.9);
-      color: $white;
-      padding: 18px 14px 13px;
-    }
-
-    .nav-link-adj {
-      border-bottom: none !important;
-      border-bottom-left-radius: 5px;
-      border-bottom-right-radius: 5px;
+    &-adj {
+      background: darken($color-primary, 5%);
     }
   }
-}
 
-.dropdown-arrow {
-  position: relative;
-  display: inline-block;
-  content: "";
-  right: -5px;
-  top: 0px;
-  width: 0;
-  height: 0;
-  border-left: 6px solid transparent;
-  border-right: 6px solid transparent;
-  border-top: 6px solid $white;
+  &-toggle {
+    padding: 16px 16px 12px !important;
+  }
 }
 
 //Nav Variables
