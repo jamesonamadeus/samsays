@@ -20,12 +20,12 @@
 
   &-bg {
     background: url("../images/hero-lg.png") center center no-repeat;
-    background-size: 87%;
+    background-size: 83%;
     bottom: -$offset;
     left: 4%;
     position: absolute;
     right: 0;
-    top: 0;
+    top: 5%;
     transform: skewY(-$skewDeg);
   }
 
