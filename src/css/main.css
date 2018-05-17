@@ -858,7 +858,7 @@ object {
   top: -34px;
   transform: skewY(-3deg); }
   .mission .section-inner {
-    padding: 100px 4% 65px;
+    padding: 60px 4%;
     bottom: -34px;
     left: 0;
     right: 0;
@@ -866,6 +866,7 @@ object {
     transform: skewY(3deg); }
   .mission .section-heading {
     color: #fff;
+    margin: 0 auto 40px;
     text-shadow: 1px 2px 3px #333, -1px -1px 3px #333; }
   .mission-content {
     display: -ms-flexbox;
@@ -891,11 +892,13 @@ object {
       text-shadow: 1px 2px 3px #333, -1px -1px 3px #333;
       max-width: 720px !important; }
   .mission-image {
-    width: 80%; }
+    width: 90%; }
 
 @media only screen and (max-width: 800px) {
   .mission .section-inner {
-    padding: 80px 3% 65px; }
+    padding: 50px 3% 40px; }
+  .mission .section-heading {
+    margin: 0 auto 25px; }
   .mission-primer {
     padding: 0 20px; }
     .mission-primer p {
@@ -906,21 +909,30 @@ object {
 
 @media only screen and (max-width: 600px) {
   .mission .section-inner {
-    padding: 60px 20px 55px; }
-  .mission-primer {
-    padding: 0 10px; }
-    .mission-primer p {
-      font-size: 24px !important;
-      font-size: 1.5rem !important; } }
+    padding: 50px 20px 40px; }
+  .mission-primer p {
+    font-size: 24px !important;
+    font-size: 1.5rem !important; } }
 
 @media only screen and (max-width: 480px) {
   .mission .section-inner {
-    padding: 55px 15px 55px; }
+    padding: 45px 15px 35px; }
+  .mission .section-heading {
+    margin: 0 auto 20px; }
   .mission-primer {
     padding: 0 10px; }
     .mission-primer p {
       font-size: 20px !important;
-      font-size: 1.25rem !important; } }
+      font-size: 1.25rem !important; }
+  .mission-image {
+    width: 100%; } }
+
+@media only screen and (max-width: 400px) {
+  .mission .section-heading {
+    margin: 0 auto 15px; }
+  .mission-primer p {
+    font-size: 18px !important;
+    font-size: 1.125rem !important; } }
 
 .question {
   background: #24d6dc;
@@ -968,7 +980,7 @@ body {
     color: #111;
     font-family: "ProximaNova-Bold", sans-serif;
     padding: 0;
-    margin: 0 auto 60px;
+    margin: 0 auto 45px;
     text-align: center; }
   .section p {
     margin: 0 auto 20px;
