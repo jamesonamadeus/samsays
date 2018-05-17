@@ -201,6 +201,27 @@
   }
 }
 
+
+@media only screen and (max-width: $break-xlg) {
+  .banner {
+    padding: 10px;
+  }
+
+  .nav {
+    &-item {
+      padding: 0;
+    }
+
+    &-link {
+      padding: 15px 16px 10px;
+    }
+
+    &-cta {
+      padding: 14px 24px 20px;
+    }
+  }
+}
+
 //Nav Variables
 $brgr-height: 55px;
 $brgr-border-width: 2px;
@@ -212,7 +233,7 @@ $brgr-text-pad: $brgr-margin;
 $brgr-transition-speed: 0.5s;
 $brgr-transition: all $brgr-transition-speed ease;
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: $break-lg) {
   .banner {
     @include align-items(flex-start);
 
@@ -424,11 +445,5 @@ $brgr-transition: all $brgr-transition-speed ease;
       border-bottom-left-radius: 0 !important;
       border-bottom-right-radius: 0 !important;
     }
-  }
-}
-
-@media only screen and (max-width: $break-md) {
-  .banner {
-    padding: 0;
   }
 }
