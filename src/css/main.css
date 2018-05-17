@@ -316,22 +316,39 @@ object {
     -moz-transition: all 1.5s ease;
     -ms-transition: all 1.5s ease;
     transition: all 1.5s ease;
+    background: #fff;
+    border-bottom: 1px solid #7a7dd3;
     position: fixed; }
-    .banner--scroll .banner-inner {
-      background: #fff;
-      border-bottom: 1px solid #7a7dd3; }
     .banner--scroll .nav-list .nav-link {
-      color: #24d6dc; }
+      color: #24d6dc;
+      text-shadow: none; }
       .banner--scroll .nav-list .nav-link:hover, .banner--scroll .nav-list .nav-link:focus, .banner--scroll .nav-list .nav-link:active {
-        background: #fff;
-        color: #24d6dc; }
-    .banner--scroll .nav-list .submenu {
-      display: none; }
-    .banner--scroll .nav-list .submenu-item .nav-link {
-      display: block;
-      background: #fff !important; }
-    .banner--scroll .nav-list > .nav-item:hover, .banner--scroll .nav-list > .nav-item:active, .banner--scroll .nav-list > .nav-item:focus {
-      background: #fff; }
+        color: #fff;
+        z-index: 10; }
+      .banner--scroll .nav-list .nav-link:after {
+        position: absolute;
+        color: #fff;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        content: "";
+        height: 3px;
+        margin: 0;
+        opacity: 0; }
+      .banner--scroll .nav-list .nav-link:hover:after, .banner--scroll .nav-list .nav-link:hover:focus, .banner--scroll .nav-list .nav-link:hover:active {
+        -webkit-animation: fill 0.7s forwards;
+        -moz-animation: fill 0.7s forwards;
+        -ms-animation: fill 0.7s forwards;
+        animation: fill 0.7s forwards;
+        background: #24d6dc;
+        color: #fff;
+        z-index: -1;
+        opacity: 1;
+        width: 100%; }
+    .banner--scroll .nav-list .nav-cta:hover, .banner--scroll .nav-list .nav-cta:focus, .banner--scroll .nav-list .nav-cta:active {
+      background: #7ce6ea;
+      color: #fff !important;
+      text-shadow: none; }
     .banner--scroll .logo-img {
       display: none; }
     .banner--scroll .logo-img-scroll {
@@ -358,38 +375,66 @@ object {
   display: inline-block;
   position: relative;
   border-top-left-radius: 5px;
-  border-top-right-radius: 5px; }
+  border-top-right-radius: 5px;
+  padding: 0 18px 0 14px; }
+  .nav-item-adj {
+    padding: 0 0 0 14px; }
   .nav-item-cta {
     padding: 0 !important; }
     .nav-item-cta-adj {
       margin-left: 5px; }
 
 .nav-link {
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -ms-transition: all 1s;
+  transition: all 1s;
+  font-size: 22px !important;
+  font-size: 1.375rem !important;
   color: #fff;
-  display: inline;
+  display: block;
+  font-family: "ProximaNova-Regular", sans-serif;
+  text-shadow: 1px 1px 3px #111;
+  height: 60px;
+  padding: 15px 20px 10px;
+  position: relative;
   text-decoration: none;
   width: 100%; }
-
-.nav-item-alt:hover, .nav-link-alt:hover {
-  background: transparent !important; }
+  .nav-link:hover, .nav-link:focus, .nav-link:active {
+    color: #fff; }
+  .nav-link:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "";
+    height: 3px;
+    margin: 0;
+    opacity: 0; }
+  .nav-link:hover:after, .nav-link:hover:focus, .nav-link:hover:active {
+    -webkit-animation: fill 0.7s forwards;
+    -moz-animation: fill 0.7s forwards;
+    -ms-animation: fill 0.7s forwards;
+    animation: fill 0.7s forwards;
+    background: #24d6dc;
+    z-index: -10;
+    opacity: 1;
+    width: 100%; }
 
 .nav-cta {
-  font-size: 16px !important;
-  font-size: 1rem !important;
-  -webkit-transition: all 0.5s ease;
-  -moz-transition: all 0.5s ease;
-  -ms-transition: all 0.5s ease;
-  transition: all 0.5s ease;
+  font-size: 22px !important;
+  font-size: 1.375rem !important;
   color: #fff !important;
-  background: #1cacb1;
+  background: #24d6dc;
   border-radius: 5px;
   border: 1px solid #fff;
   font-family: "ProximaNova-Regular", sans-serif;
-  padding: 16px 13px 13px;
-  margin: 0; }
+  padding: 14px 32px 20px;
+  margin: 0;
+  height: 62px; }
   .nav-cta:hover, .nav-cta:focus {
-    background: #fff !important;
-    color: #333 !important; }
+    background: #fff;
+    color: #24d6dc !important; }
     .nav-cta:hover .nav-toggle, .nav-cta:focus .nav-toggle {
       color: #fff !important; }
   .nav-cta-adj {

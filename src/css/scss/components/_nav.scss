@@ -23,40 +23,54 @@
 
   &--scroll {
     @include transition(all 1.5s ease);
+    background: $white;
+    border-bottom: 1px solid $color-secondary;
     position: fixed;
-
-    .banner-inner {
-      background: $white;
-      border-bottom: 1px solid $color-secondary;
-    }
 
     .nav {
       &-list {
         .nav-link {
           color: $color-primary;
+          text-shadow: none;
 
           &:hover,
           &:focus,
           &:active {
-            background: $white;
-            color: $color-primary;
+            color: $white;
+            z-index: 10;
+          }
+        
+          &:after {
+            position: absolute;
+            color: $white;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            content: "";
+            height: 3px;
+            margin: 0;
+            opacity: 0;
+          }
+        
+          &:hover:after,
+          &:hover:focus,
+          &:hover:active {
+            @include animation(fill 0.7s forwards);
+            background: $color-primary;
+            color: $white;
+            z-index: -1;
+            opacity: 1;
+            width: 100%;
           }
         }
 
-        .submenu {
-          display: none;
-        }
-
-        .submenu-item .nav-link {
-          display: block;
-          background: $white !important;
-        }
-
-        > .nav-item {
+        .nav-cta {
           &:hover,
-          &:active,
-          &:focus {
-            background: $white;
+          &:focus,
+          &:active {
+            background: lighten($color-primary, 20%);
+            color: $white !important;
+            text-shadow: none;
           }
         }
       }
@@ -100,12 +114,10 @@
     position: relative;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
-    // padding: 18px 18px 16px 14px;
+    padding: 0 18px 0 14px;
 
-    &:hover,
-    &:active,
-    &:focus {
-
+    &-adj {
+      padding: 0 0 0 14px;
     }
 
     &-cta {
@@ -118,34 +130,61 @@
   }
 
   &-link {
+    @include transition(all 1s);
+    @include font-size(22);
     color: $white;
-    display: inline;
+    display: block;
+    font-family: $font-primary;
+    text-shadow: 1px 1px 3px $black;
+    height: 60px;
+    padding: 15px 20px 10px;
+    position: relative;
     text-decoration: none;
     width: 100%;
-  }
-
-  &-item-alt,
-  &-link-alt {
-    &:hover {
-      background: transparent !important;
+  
+    &:hover,
+    &:focus,
+    &:active {
+      color: #fff;
+    }
+  
+    &:after {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      content: "";
+      height: 3px;
+      margin: 0;
+      opacity: 0;
+    }
+  
+    &:hover:after,
+    &:hover:focus,
+    &:hover:active {
+      @include animation(fill 0.7s forwards);
+      background: $color-primary;
+      z-index: -10;
+      opacity: 1;
+      width: 100%;
     }
   }
 
   &-cta {
-    @include font-size(16);
-    @include transition(all 0.5s ease);
+    @include font-size(22);
     color: $white !important;
-    background: darken($color-primary, 10%);
+    background: $color-primary;
     border-radius: 5px;
     border: 1px solid $white;
     font-family: $font-primary;
-    padding: 16px 13px 13px;
+    padding: 14px 32px 20px;
     margin: 0;
+    height: 62px;
 
     &:hover,
     &:focus {
-      background: $white !important;
-      color: $color-text !important;
+      background: $white;
+      color: $color-primary !important;
 
       .nav-toggle {
         color: $white !important;
