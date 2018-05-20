@@ -12,11 +12,12 @@ window.onscroll = function () {
 };
 
 // Link Smooth Scroll
+$(document).on('click', 'a[href^="#"]', function (event) {
+  event.preventDefault();
 
-document.querySelector('a[href*="#"]').scrollIntoView({
-  top: 100, // could be negative value
-  left: 0,
-  behavior: 'smooth'
+  $('html, body').animate({
+    scrollTop: $($.attr(this, 'href')).offset().top - 100
+  }, 500);
 });
 
 

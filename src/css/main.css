@@ -323,6 +323,7 @@ object {
       color: #24d6dc;
       text-shadow: none; }
       .banner--scroll .nav-list .nav-link:hover, .banner--scroll .nav-list .nav-link:focus, .banner--scroll .nav-list .nav-link:active {
+        background: #24d6dc;
         color: #fff;
         z-index: 10; }
       .banner--scroll .nav-list .nav-link:after {
@@ -401,6 +402,7 @@ object {
   text-decoration: none;
   width: 100%; }
   .nav-link:hover, .nav-link:focus, .nav-link:active {
+    background: #24d6dc;
     color: #fff; }
   .nav-link:after {
     position: absolute;

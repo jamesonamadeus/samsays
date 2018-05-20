@@ -36,6 +36,7 @@
           &:hover,
           &:focus,
           &:active {
+            background: $cc-1;
             color: $white;
             z-index: 10;
           }
@@ -143,7 +144,8 @@
     &:hover,
     &:focus,
     &:active {
-      color: #fff;
+      background: $cc-1;
+      color: $white;
     }
   
     &:after {
