@@ -16,16 +16,17 @@
     right: 0;
     top: -$offset;
     transform: skewY($skewDeg);
+
   }
 
   &-bg {
     background: url("../images/hero-lg.png") center center no-repeat;
     background-size: 83%;
     bottom: -$offset;
-    left: 4%;
+    left: 0;
     position: absolute;
     right: 0;
-    top: 5%;
+    top: $offset;
     transform: skewY(-$skewDeg);
   }
 
@@ -132,9 +133,6 @@
 
     &-bg {
       background-size: 100%;
-      left: 2%;
-      right: 2%;
-      top: 0;
     }
 
     &-subline {
@@ -166,17 +164,33 @@
   .hero {
     height: 85vh;
 
+    &-bg {
+      &:before {
+        content: "";
+        position: absolute;
+        left: 0; 
+        right: 0;
+        top: 0; 
+        bottom: 0;
+        background: rgba(0, 0, 0, .15);
+      }
+    }
+
     &-content {
       padding: 0 0 0 30px;
     }
 
     &-tagline {
       @include font-size(60);
-    }
-
-    &-info {
-      @include align-items(center);
-      margin: 3% 3% 0 0;
+      -webkit-text-stroke: 1px $white;
+  
+      &-2nd {
+        margin: -3.5% 0 0;
+      }
+  
+      &-3rd {
+        margin: -3.7% 0 0;
+      }
     }
   }
 }
@@ -185,12 +199,30 @@
   .hero {
     height: 70vh;
 
+    &-bg {
+      &:before {
+        background: rgba(0, 0, 0, .25);
+      }
+    }
+
     &-content {
       padding: 0 0 0 20px;
     }
 
     &-tagline {
-      @include font-size(44);
+      @include font-size(54);
+
+      &-1st {
+        margin: -3% 0 0;
+      }
+
+      &-2nd {
+        margin: -8% 0 0;
+      }
+  
+      &-3rd {
+        margin: -8.2% 0 0;
+      }
     }
 
     &-info {
