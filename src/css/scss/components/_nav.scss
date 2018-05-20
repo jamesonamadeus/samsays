@@ -297,11 +297,10 @@ $brgr-transition: all $brgr-transition-speed ease;
     &-item {
       color: $white;
       list-style-type: none;
-      padding: 12px 0;
       transform: translateX(-250px);
 
       &:first-child {
-        padding-top: 30px;
+        padding-top: 10px;
       }
 
       &:not(.open) {
@@ -322,15 +321,10 @@ $brgr-transition: all $brgr-transition-speed ease;
       color: $white;
       font-size: $brgr-font-size;
       font-weight: 400;
-      padding: 18px 25px 18px 25px;
+      height: 80px;
+      padding: 24px 30px 25px;
       text-decoration: none;
       width: auto;
-
-      &:hover,
-      &--active {
-        border-right: $color-primary solid 10px;
-        padding-right: $brgr-text-pad;
-      }
     }
 
     &-cta {
@@ -339,7 +333,8 @@ $brgr-transition: all $brgr-transition-speed ease;
       border: 1px solid $color-primary;
       border-radius: 0;
       display: block;
-      padding: 18px 25px 16px 25px !important;
+      height: 80px;
+      padding: 24px 30px 25px !important;
       text-align: left;
       width: 100%;
 
@@ -354,8 +349,8 @@ $brgr-transition: all $brgr-transition-speed ease;
     }
 
     &-menu {
-      background: $color-primary;
-      border: $white solid $brgr-border-width;
+      background: $white;
+      border: $color-primary solid $brgr-border-width;
       border-radius: 50%;
       cursor: pointer;
       display: inline-block;
@@ -406,7 +401,7 @@ $brgr-transition: all $brgr-transition-speed ease;
     }
 
     &-bun {
-      background: rgba(255, 255, 255, 0.9);
+      background: $color-primary;
       position: relative;
       transition: $brgr-transition;
 
@@ -431,19 +426,4 @@ $brgr-transition: all $brgr-transition-speed ease;
     }
   }
 
-  .submenu {
-    background: lighten($color-primary, 35%);
-    position: relative;
-
-    .nav-link {
-      padding: 18px 20px 13px 60px;
-
-    }
-
-    .nav-link-adj {
-      border-bottom: none !important;
-      border-bottom-left-radius: 0 !important;
-      border-bottom-right-radius: 0 !important;
-    }
-  }
 }

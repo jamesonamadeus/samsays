@@ -45,17 +45,17 @@
     text-shadow: 3px 3px 0 $black, -1px -1px 0 $black, 1px -1px 0 $black,
       -1px 1px 0 $black, 1px 1px 0 $black;
 
-      &-1st {
-        margin: 0 ;
-      }
+    &-1st {
+      margin: 0 ;
+    }
 
-      &-2nd {
-        margin: -1.5% 0 0;
-      }
+    &-2nd {
+      margin: -1.5% 0 0;
+    }
 
-      &-3rd {
-        margin: -1.7% 0 0;
-      }
+    &-3rd {
+      margin: -1.7% 0 0;
+    }
   }
 
   &-info {
@@ -110,131 +110,92 @@
   }
 }
 
-@media only screen and (max-width: $break-xlg) {
-  .hero {
-    &-tagline {
-      @include font-size(96);
-    }
-  }
-}
-
 @media only screen and (max-width: $break-lg) {
   .hero {
-    min-height: 480px;
+    height: 90vh;
+
+    &-info {
+      margin: 3% 3% 0 0;
+    }
 
     &-tagline {
-      @include font-size(48);
-      margin: 45px auto 50px;
-    }
+      @include font-size(64);
 
-    a {
-      @include font-size(32);
-      margin-top: 80px;
-    }
-
-    &-alt {
-      min-height: 280px;
-
-      .hero-tagline {
-        @include font-size(48);
-        margin: 45px auto 15px;
+      &-2nd {
+        margin: -2.5% 0 0;
+      }
+  
+      &-3rd {
+        margin: -2.7% 0 0;
       }
     }
-  }
-}
 
-@media only screen and (max-width: 660px) {
-  .hero {
-    min-height: 380px;
-
-    &-tagline {
-      @include font-size(42);
-      margin: 60px auto 50px;
+    &-bg {
+      background-size: 100%;
+      left: 2%;
+      right: 2%;
+      top: 0;
     }
 
-    a {
-      display: none;
-    }
-
-    &-alt {
-      min-height: 240px;
-
-      .hero-tagline {
-        @include font-size(36);
-        margin: 45px auto 15px;
+    &-subline {
+      width: 380px;
+  
+      &-primer {
+        @include font-size(20);
       }
+  
+      &-info {
+        @include font-size(22);
+      }
+  
+      &-img {
+        margin: 0 0 0 10px;
+        width: 40px;
+      }
+    }
+
+    &-btn {
+      @include font-size(22);
+      height: 70px;
+      width: 380px;
     }
   }
 }
 
 @media only screen and (max-width: $break-md) {
   .hero {
-    min-height: 360px;
+    height: 85vh;
 
-    &-tagline {
-      @include font-size(34);
+    &-content {
+      padding: 0 0 0 30px;
     }
 
-    &-alt {
-      min-height: 220px;
+    &-tagline {
+      @include font-size(60);
+    }
 
-      .hero-tagline {
-        @include font-size(36);
-        margin: 45px auto 15px;
-      }
+    &-info {
+      @include align-items(center);
+      margin: 3% 3% 0 0;
     }
   }
 }
 
 @media only screen and (max-width: $break-sm) {
   .hero {
-    min-height: 320px;
+    height: 70vh;
 
-    &-tagline {
-      @include font-size(30);
-      margin: 80px auto 50px;
+    &-content {
+      padding: 0 0 0 20px;
     }
 
-    &-alt {
-      min-height: 180px;
+    &-tagline {
+      @include font-size(44);
+    }
 
-      .hero-tagline {
-        @include font-size(28);
-      }
+    &-info {
+      @include align-items(center);
     }
   }
 }
 
-@media only screen and (max-width: 420px) {
-  .hero {
-    min-height: 300px;
-
-    &-tagline {
-      @include font-size(29);
-    }
-
-    &-alt {
-      min-height: 180px;
-
-      .hero-tagline {
-        @include font-size(28);
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: 400px) {
-  .hero {
-    &-tagline {
-      @include font-size(28);
-    }
-  }
-}
-
-@media only screen and (max-width: $break-xsm) {
-  .hero {
-    &-tagline {
-      @include font-size(24);
-    }
-  }
-}
