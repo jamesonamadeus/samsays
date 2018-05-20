@@ -335,7 +335,7 @@ object {
         height: 3px;
         margin: 0;
         opacity: 0; }
-      .banner--scroll .nav-list .nav-link:hover:after, .banner--scroll .nav-list .nav-link:hover:focus, .banner--scroll .nav-list .nav-link:hover:active {
+      .banner--scroll .nav-list .nav-link:hover:after {
         -webkit-animation: fill 0.7s forwards;
         -moz-animation: fill 0.7s forwards;
         -ms-animation: fill 0.7s forwards;
@@ -411,7 +411,7 @@ object {
     height: 3px;
     margin: 0;
     opacity: 0; }
-  .nav-link:hover:after, .nav-link:hover:focus, .nav-link:hover:active {
+  .nav-link:hover:after {
     -webkit-animation: fill 0.7s forwards;
     -moz-animation: fill 0.7s forwards;
     -ms-animation: fill 0.7s forwards;

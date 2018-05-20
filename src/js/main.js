@@ -11,6 +11,15 @@ window.onscroll = function () {
   }
 };
 
+// Link Smooth Scroll
+
+document.querySelector('a[href*="#"]').scrollIntoView({
+  top: 100, // could be negative value
+  left: 0,
+  behavior: 'smooth'
+});
+
+
 (function () {
   //nav brgr
   var body = document.body;
@@ -65,4 +74,5 @@ $(".link-togg").on("click", function () {
   $("body").removeClass("open");
   $(".nav-contain").removeClass("open");
   $(".nav-list").removeClass("open");
+  $(".banner").removeClass("open");
 });
