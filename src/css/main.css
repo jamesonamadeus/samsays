@@ -653,7 +653,6 @@ object {
   .hero-content {
     position: relative;
     margin-top: 90px;
-    padding: 10px 0 0 50px;
     width: 100%; }
   .hero-tagline {
     font-size: 76px !important;
@@ -661,6 +660,7 @@ object {
     -webkit-text-stroke: 2px #fff;
     color: #7a7dd3;
     font-family: "ProximaNova-Bold", sans-serif;
+    padding: 0 0 0 50px;
     text-align: left;
     text-shadow: 3px 3px 0 #111, -1px -1px 0 #111, 1px -1px 0 #111, -1px 1px 0 #111, 1px 1px 0 #111; }
     .hero-tagline-1st {
@@ -682,7 +682,8 @@ object {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
-    margin: 6% 4% 0 0; }
+    padding: 0 50px 0 0;
+    margin: 6% 0 0 0; }
   .hero-subline {
     display: -ms-flexbox;
     display: -webkit-flex;
@@ -730,7 +731,7 @@ object {
   .hero {
     height: 90vh; }
     .hero-info {
-      margin: 3% 3% 0 0; }
+      margin: 3% 0 0 0; }
     .hero-tagline {
       font-size: 64px !important;
       font-size: 4rem !important; }
@@ -768,12 +769,17 @@ object {
       top: 0;
       bottom: 0;
       background: rgba(0, 0, 0, 0.15); }
-    .hero-content {
-      padding: 0 0 0 30px; }
+    .hero-info {
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      padding: 0;
+      margin: 3% auto 0; }
     .hero-tagline {
       font-size: 60px !important;
       font-size: 3.75rem !important;
-      -webkit-text-stroke: 1px #fff; }
+      -webkit-text-stroke: 1px #fff;
+      padding: 0 0 0 30px; }
       .hero-tagline-2nd {
         margin: -3.5% 0 0; }
       .hero-tagline-3rd {
@@ -784,21 +790,35 @@ object {
     height: 70vh; }
     .hero-bg:before {
       background: rgba(0, 0, 0, 0.25); }
-    .hero-content {
-      padding: 0 0 0 20px; }
     .hero-tagline {
       font-size: 54px !important;
       font-size: 3.375rem !important; }
       .hero-tagline-1st {
-        margin: -3% 0 0; }
+        margin: -4% 0 0; }
       .hero-tagline-2nd {
-        margin: -8% 0 0; }
+        margin: -7% 0 0; }
       .hero-tagline-3rd {
-        margin: -8.2% 0 0; }
+        margin: -7.2% 0 0; }
     .hero-info {
       -ms-flex-align: center;
       -webkit-align-items: center;
-      align-items: center; } }
+      align-items: center; }
+    .hero-subline {
+      width: 360px; }
+      .hero-subline-primer {
+        font-size: 18px !important;
+        font-size: 1.125rem !important; }
+      .hero-subline-info {
+        font-size: 20px !important;
+        font-size: 1.25rem !important; }
+      .hero-subline-img {
+        margin: 0 0 0 10px;
+        width: 40px; }
+    .hero-btn {
+      font-size: 22px !important;
+      font-size: 1.375rem !important;
+      height: 70px;
+      width: 360px; } }
 
 .benefits .section-inner {
   padding: 55px 4% 5px; }

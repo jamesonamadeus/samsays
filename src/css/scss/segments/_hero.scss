@@ -33,7 +33,6 @@
   &-content {
     position: relative;
     margin-top: 90px;
-    padding: 10px 0 0 50px;
     width: 100%;
   }
 
@@ -42,12 +41,14 @@
     -webkit-text-stroke: 2px $white;
     color: $cc-3;
     font-family: $font-primary-bold;
+    padding: 0 0 0 50px;
     text-align: left;
     text-shadow: 3px 3px 0 $black, -1px -1px 0 $black, 1px -1px 0 $black,
       -1px 1px 0 $black, 1px 1px 0 $black;
 
     &-1st {
       margin: 0 ;
+
     }
 
     &-2nd {
@@ -64,7 +65,8 @@
     @include flex-direction(column);
     @include align-items(flex-end);
     @include justify-content(center);
-    margin: 6% 4% 0 0;
+    padding: 0 50px 0 0;
+    margin: 6% 0 0 0;
   }
 
   &-subline {
@@ -116,7 +118,7 @@
     height: 90vh;
 
     &-info {
-      margin: 3% 3% 0 0;
+      margin: 3% 0 0 0;
     }
 
     &-tagline {
@@ -176,13 +178,16 @@
       }
     }
 
-    &-content {
-      padding: 0 0 0 30px;
+    &-info {
+      @include align-items(center);
+      padding: 0;
+      margin: 3% auto 0;
     }
 
     &-tagline {
       @include font-size(60);
       -webkit-text-stroke: 1px $white;
+      padding: 0 0 0 30px;
   
       &-2nd {
         margin: -3.5% 0 0;
@@ -205,28 +210,47 @@
       }
     }
 
-    &-content {
-      padding: 0 0 0 20px;
-    }
-
     &-tagline {
       @include font-size(54);
 
       &-1st {
-        margin: -3% 0 0;
+        margin: -4% 0 0;
       }
 
       &-2nd {
-        margin: -8% 0 0;
+        margin: -7% 0 0;
       }
   
       &-3rd {
-        margin: -8.2% 0 0;
+        margin: -7.2% 0 0;
       }
     }
 
     &-info {
       @include align-items(center);
+    }
+
+    &-subline {
+      width: 360px;
+  
+      &-primer {
+        @include font-size(18);
+      }
+  
+      &-info {
+        @include font-size(20);
+      }
+  
+      &-img {
+        margin: 0 0 0 10px;
+        width: 40px;
+      }
+    }
+
+    &-btn {
+      @include font-size(22);
+      height: 70px;
+      width: 360px;
     }
   }
 }
