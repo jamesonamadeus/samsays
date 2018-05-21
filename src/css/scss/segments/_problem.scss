@@ -29,3 +29,16 @@
     }
   }
 }
+
+@media only screen and (max-width: $break-lg) {
+  .problem {
+    &-dataset {
+      @include flex-direction(column);
+  
+      &-element {
+        margin: 20px;
+        width: 100%;
+      }
+    }
+  }
+}

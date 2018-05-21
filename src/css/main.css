@@ -906,6 +906,15 @@ object {
       font-size: 1.75rem !important;
       font-family: "ProximaNova-Bold", sans-serif; }
 
+@media only screen and (max-width: 800px) {
+  .problem-dataset {
+    -ms-flex-direction: column;
+    -webkit-flex-direction: column;
+    flex-direction: column; }
+    .problem-dataset-element {
+      margin: 20px;
+      width: 100%; } }
+
 .mission {
   background: #24d6dc;
   background: -moz-linear-gradient(-45deg, #24d6dc 0%, #7a7dd3 80%);
