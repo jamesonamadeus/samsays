@@ -204,14 +204,9 @@
   .hero {
     height: 70vh;
 
-    &-bg {
-      &:before {
-        background: rgba(0, 0, 0, .25);
-      }
-    }
-
     &-tagline {
       @include font-size(54);
+      padding: 0 0 0 15px;
 
       &-1st {
         margin: -4% 0 0;
@@ -228,10 +223,11 @@
 
     &-info {
       @include align-items(center);
+      padding: 0 15px 0;
     }
 
     &-subline {
-      width: 360px;
+      width: 100%;
   
       &-primer {
         @include font-size(18);
@@ -250,7 +246,7 @@
     &-btn {
       @include font-size(22);
       height: 70px;
-      width: 360px;
+      width: 100%;
     }
   }
 }

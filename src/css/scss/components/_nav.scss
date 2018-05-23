@@ -423,5 +423,13 @@ $brgr-transition: all $brgr-transition-speed ease;
       }
     }
   }
+}
 
+@media only screen and (max-width: $break-md) {
+  .logo {
+    &-main {
+
+      width: 160px;
+    }
+  }
 }
