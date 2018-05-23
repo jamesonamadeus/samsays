@@ -9,11 +9,6 @@
   .section {
     &-inner {
       padding: 60px 4%;
-      bottom: -$offset;
-      left: 0;
-      right: 0;
-      top: 0;
-      transform: skewY(-$skewDeg);
     }
 
     &-heading {
@@ -24,6 +19,12 @@
     }
   }
 
+  &-bg {
+    background: url("../images/world-mapx1280.png") center center no-repeat;
+    background-size: 100%;
+    transform: skewY(-$skewDeg);
+  }
+
   &-content {
     @include flexbox(flex);
     @include align-items(center);
@@ -32,7 +33,6 @@
   }
 
   &-primer {
-    position: absolute;
     width: 100%;
 
     p {
@@ -42,11 +42,11 @@
       text-shadow: 1px 2px 3px $color-text,
                  -1px -1px 3px $color-text;
       max-width: 720px !important;
-    }
-  }
 
-  &-image {
-    width: 90%;
+      &:last-of-type {
+        margin: 0;
+      }
+    }
   }
 }
 
@@ -54,7 +54,7 @@
   .mission {
     .section {
       &-inner {
-        padding: 50px 3% 40px;
+        padding: 50px 3%;
       }
 
       &-heading {
@@ -63,7 +63,6 @@
     }
 
     &-primer {
-      padding: 0 20px;
 
       p{
         @include font-size(28);
@@ -78,9 +77,10 @@
 
 @media only screen and (max-width: $break-md) {
   .mission {
+
     .section {
       &-inner {
-        padding: 50px 20px 40px;
+        padding: 50px 20px;
       }
     }
 
@@ -97,7 +97,7 @@
   .mission {
     .section {
       &-inner {
-        padding: 45px 15px 35px;
+        padding: 45px 15px;
       }
 
       &-heading {
@@ -106,7 +106,6 @@
     }
 
     &-primer {
-      padding: 0 10px;
 
       p{
         @include font-size(20);
