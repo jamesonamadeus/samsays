@@ -1,5 +1,5 @@
-@import "_config.scss";
-@import "_mixins.scss";
+@import "__config.scss";
+@import "__mixins.scss";
 
 * {
   @include transition(all 0.5s ease);
