@@ -21,7 +21,7 @@
 
   &-bg {
     background: url("../images/world-mapx1280.png") center center no-repeat;
-    background-size: 100%;
+    background-size: 75%;
     transform: skewY(-$skewDeg);
   }
 
@@ -44,7 +44,7 @@
       max-width: 720px !important;
 
       &:last-of-type {
-        margin: 0;
+        margin: 0 auto;
       }
     }
   }
@@ -60,6 +60,10 @@
       &-heading {
         margin: 0 auto 25px;
       }
+    }
+
+    &-bg {
+      background-size: 100%;
     }
 
     &-primer {
