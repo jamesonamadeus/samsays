@@ -11,15 +11,12 @@ window.onscroll = function () {
   }
 };
 
-// Link Smooth Scroll
-$(document).on('click', 'a[href^="#"]', function (event) {
-  event.preventDefault();
-
-  $('html, body').animate({
-    scrollTop: $($.attr(this, 'href')).offset().top - 100
-  }, 500);
+//smooth scrolling
+var scroll = new SmoothScroll('a[href*="#"]', {
+  speed: 1000,
+  offset: 100,
+  easing: 'easeInOutQuad'
 });
-
 
 (function () {
   //nav brgr
