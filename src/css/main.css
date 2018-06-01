@@ -194,6 +194,30 @@ a {
     transform: translate3d(250px, 0, 0);
     visibility: hidden; } }
 
+@-webkit-keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@-moz-keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes animatedgradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
 .clearfix:after,
 .group:after {
   content: " ";
@@ -901,14 +925,36 @@ object {
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
+  -ms-flex-direction: column;
+  -webkit-flex-direction: column;
+  flex-direction: column;
   margin: 50px auto 0; }
+  .problem-dataset-first, .problem-dataset-second, .problem-dataset-third {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-direction: row;
+    -webkit-flex-direction: row;
+    flex-direction: row;
+    margin: 50px auto;
+    width: 100%; }
+  .problem-dataset-second {
+    -ms-flex-direction: row-reverse;
+    -webkit-flex-direction: row-reverse;
+    flex-direction: row-reverse; }
   .problem-dataset-element {
     margin: 20px;
-    width: 33%; }
+    width: 50%; }
     .problem-dataset-element h3 {
       font-size: 28px !important;
       font-size: 1.75rem !important;
       font-family: "ProximaNova-Bold", sans-serif; }
+  .problem-dataset-image {
+    background: linear-gradient(60deg, #ffffff, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+    animation: animatedgradient 8s ease infinite;
+    background-size: 600% 600%;
+    height: 200px;
+    width: 50%; }
 
 @media only screen and (max-width: 800px) {
   .problem-dataset {

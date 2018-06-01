@@ -13,11 +13,25 @@
     @include flexbox(flex);
     @include align-items(center);
     @include justify-content(center);
+    @include flex-direction(column);
     margin: 50px auto 0;
+
+    &-first,
+    &-second,
+    &-third {
+      @include flexbox(flex);
+      @include flex-direction(row);
+      margin: 50px auto;
+      width: 100%;
+    }
+
+    &-second {
+      @include flex-direction(row-reverse);
+    }
 
     &-element {
       margin: 20px;
-      width: 33%;
+      width: 50%;
 
       h3 {
         @include font-size(28);
@@ -29,7 +43,19 @@
     }
 
     &-image {
-      
+      background: linear-gradient(
+        60deg,
+        #ffffff,
+        #a166ab,
+        #5073b8,
+        #1098ad,
+        #07b39b,
+        #6fba82
+      );
+      animation: animatedgradient 8s ease infinite;
+      background-size: 600% 600%;
+      height: 200px;
+      width: 50%;
     }
   }
 }
