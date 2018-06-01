@@ -30,7 +30,7 @@
     }
 
     &-element {
-      width: 60%;
+      width: 55%;
 
       h3 {
         @include font-size(36);
@@ -53,19 +53,11 @@
     }
 
     &-image {
-      background: linear-gradient(
-        60deg,
-        #ffffff,
-        #a166ab,
-        #5073b8,
-        #1098ad,
-        #07b39b,
-        #6fba82
-      );
-      animation: animatedgradient 8s ease infinite;
-      background-size: 600% 600%;
-      height: 200px;
-      width: 40%;
+      width: 45%;
+    }
+
+    &-icon {
+      width: 400px;
     }
   }
 }
