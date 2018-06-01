@@ -30,15 +30,25 @@
     }
 
     &-element {
-      margin: 20px;
-      width: 50%;
+      width: 60%;
 
       h3 {
-        @include font-size(28);
+        @include font-size(36);
         font-family: $font-primary-bold;
+        margin: 0 auto 15px;
+        animation: animatedgradient 10s ease infinite;
+        background: linear-gradient(
+          330deg,
+          #f857a6 0%,
+          #ff5858 100%
+        );
+        background-size: 400% 400%;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
       }
 
       p {
+        @include font-size(22);
       }
     }
 
@@ -55,7 +65,7 @@
       animation: animatedgradient 8s ease infinite;
       background-size: 600% 600%;
       height: 200px;
-      width: 50%;
+      width: 40%;
     }
   }
 }

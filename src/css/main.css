@@ -146,6 +146,9 @@ a {
   a:hover, a:focus {
     text-decoration: none; }
 
+.primary-bold {
+  font-family: "ProximaNova-Bold", sans-serif; }
+
 @media screen and (max-width: 480px) {
   body {
     font-size: 14px; }
@@ -943,18 +946,26 @@ object {
     -webkit-flex-direction: row-reverse;
     flex-direction: row-reverse; }
   .problem-dataset-element {
-    margin: 20px;
-    width: 50%; }
+    width: 60%; }
     .problem-dataset-element h3 {
-      font-size: 28px !important;
-      font-size: 1.75rem !important;
-      font-family: "ProximaNova-Bold", sans-serif; }
+      font-size: 36px !important;
+      font-size: 2.25rem !important;
+      font-family: "ProximaNova-Bold", sans-serif;
+      margin: 0 auto 15px;
+      animation: animatedgradient 10s ease infinite;
+      background: linear-gradient(330deg, #f857a6 0%, #ff5858 100%);
+      background-size: 400% 400%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent; }
+    .problem-dataset-element p {
+      font-size: 22px !important;
+      font-size: 1.375rem !important; }
   .problem-dataset-image {
     background: linear-gradient(60deg, #ffffff, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
     animation: animatedgradient 8s ease infinite;
     background-size: 600% 600%;
     height: 200px;
-    width: 50%; }
+    width: 40%; }
 
 @media only screen and (max-width: 800px) {
   .problem-dataset {
@@ -1092,12 +1103,12 @@ body {
   .section-alt {
     background: #24d6dc; }
   .section-heading {
-    font-size: 48px !important;
-    font-size: 3rem !important;
+    font-size: 52px !important;
+    font-size: 3.25rem !important;
     color: #111;
     font-family: "ProximaNova-Bold", sans-serif;
     padding: 0;
-    margin: 0 auto 45px;
+    margin: 0 auto 35px;
     text-align: center; }
   .section p {
     margin: 0 auto 20px;
