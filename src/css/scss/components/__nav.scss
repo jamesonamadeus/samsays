@@ -30,7 +30,7 @@
     .nav {
       &-list {
         .nav-link {
-          color: $color-primary;
+          color: $color-secondary;
           text-shadow: none;
 
           &:hover,
@@ -40,7 +40,7 @@
             color: $white;
             z-index: 10;
           }
-        
+
           &:after {
             position: absolute;
             color: $white;
@@ -52,7 +52,7 @@
             margin: 0;
             opacity: 0;
           }
-        
+
           &:hover:after {
             @include animation(fill 0.7s forwards);
             background: $color-primary;
@@ -90,7 +90,7 @@
   &-main {
     @include font-size(10); //Height for Logo Adjustment
     margin: 0;
-    width: 200px;
+    width: 230px;
   }
 }
 
@@ -140,14 +140,14 @@
     position: relative;
     text-decoration: none;
     width: 100%;
-  
+
     &:hover,
     &:focus,
     &:active {
       background: $cc-1;
       color: $white;
     }
-  
+
     &:after {
       position: absolute;
       bottom: 0;
@@ -158,8 +158,8 @@
       margin: 0;
       opacity: 0;
     }
-  
-    &:hover:after{
+
+    &:hover:after {
       @include animation(fill 0.7s forwards);
       background: $color-primary;
       z-index: -10;
@@ -198,7 +198,6 @@
     padding: 16px 16px 12px !important;
   }
 }
-
 
 @media only screen and (max-width: $break-xlg) {
   .banner {
@@ -245,7 +244,6 @@ $brgr-transition: all $brgr-transition-speed ease;
     }
 
     &--scroll {
-
       &.open {
         background: $white;
 
@@ -259,7 +257,6 @@ $brgr-transition: all $brgr-transition-speed ease;
             border-bottom-right-radius: 0;
           }
         }
-
       }
     }
   }
@@ -428,7 +425,6 @@ $brgr-transition: all $brgr-transition-speed ease;
 @media only screen and (max-width: $break-md) {
   .logo {
     &-main {
-
       width: 160px;
     }
   }

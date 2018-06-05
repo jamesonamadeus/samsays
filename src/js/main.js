@@ -68,9 +68,9 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 })();
 
 //Toggle Nav from Links
-$(".link-togg").on("click", function () {
-  $("body").removeClass("open");
-  $(".nav-contain").removeClass("open");
-  $(".nav-list").removeClass("open");
-  $(".banner").removeClass("open");
-});
+// $(".link-togg").on("click", function () {
+//   $("body").removeClass("open");
+//   $(".nav-contain").removeClass("open");
+//   $(".nav-list").removeClass("open");
+//   $(".banner").removeClass("open");
+// });
