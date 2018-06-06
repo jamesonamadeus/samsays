@@ -961,10 +961,39 @@ object {
   .problem-dataset {
     -ms-flex-direction: column;
     -webkit-flex-direction: column;
-    flex-direction: column; }
+    flex-direction: column;
+    margin: 0 auto; }
+    .problem-dataset-first, .problem-dataset-second, .problem-dataset-third {
+      margin: 10px auto; }
     .problem-dataset-element {
       margin: 20px;
-      width: 100%; } }
+      width: 100%; }
+      .problem-dataset-element h3 {
+        font-size: 28px !important;
+        font-size: 1.75rem !important; }
+      .problem-dataset-element p {
+        font-size: 18px !important;
+        font-size: 1.125rem !important; } }
+
+@media only screen and (max-width: 600px) {
+  .problem-dataset-first, .problem-dataset-second, .problem-dataset-third {
+    -ms-flex-direction: column-reverse;
+    -webkit-flex-direction: column-reverse;
+    flex-direction: column-reverse;
+    margin: 10px auto 30px; }
+  .problem-dataset-third {
+    margin: 10px auto 0; }
+  .problem-dataset-image {
+    width: 60%; } }
+
+@media only screen and (max-width: 600px) {
+  .problem-dataset-element p {
+    font-size: 16px !important;
+    font-size: 1rem !important; } }
+
+@media only screen and (max-width: 480px) {
+  .problem .section-inner {
+    padding: 40px 15px 15px; } }
 
 .mission {
   background: #24d6dc;
