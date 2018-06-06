@@ -1,9 +1,13 @@
 .problem {
-
   .section-inner {
   }
 
   .section-heading {
+    animation: animatedgradient 10s ease infinite;
+    background: linear-gradient(330deg, #c471ed 0%, #f64f59 100%);
+    background-size: 400% 400%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
   }
 
   &-primer {
@@ -14,7 +18,7 @@
     @include align-items(center);
     @include justify-content(center);
     @include flex-direction(column);
-    margin: 50px auto 0;
+    margin: 30px auto 0;
 
     &-first,
     &-second,
@@ -39,11 +43,7 @@
         font-family: $font-primary-bold;
         margin: 0 auto 15px;
         animation: animatedgradient 10s ease infinite;
-        background: linear-gradient(
-          330deg,
-          #f857a6 0%,
-          #ff5858 100%
-        );
+        background: linear-gradient(330deg, #f857a6 0%, #ff5858 100%);
         background-size: 400% 400%;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
@@ -68,7 +68,7 @@
   .problem {
     &-dataset {
       @include flex-direction(column);
-  
+
       &-element {
         margin: 20px;
         width: 100%;

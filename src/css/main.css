@@ -897,6 +897,13 @@ object {
   .benefits .section-inner {
     padding: 45px 15px 30px; } }
 
+.problem .section-heading {
+  animation: animatedgradient 10s ease infinite;
+  background: linear-gradient(330deg, #c471ed 0%, #f64f59 100%);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 .problem-dataset {
   display: -ms-flexbox;
   display: -webkit-flex;
@@ -910,7 +917,7 @@ object {
   -ms-flex-direction: column;
   -webkit-flex-direction: column;
   flex-direction: column;
-  margin: 50px auto 0; }
+  margin: 30px auto 0; }
   .problem-dataset-first, .problem-dataset-second, .problem-dataset-third {
     display: -ms-flexbox;
     display: -webkit-flex;
