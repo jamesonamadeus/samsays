@@ -38,3 +38,11 @@
 #mtr-sharing-branding-container {
   display: none;
 }
+
+@media only screen and (max-width: $break-sm) {
+  .modal {
+    &-close {
+      right: 5px;
+    }
+  }
+}

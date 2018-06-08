@@ -1201,3 +1201,7 @@ body {
 #mtr-form-branding-container,
 #mtr-sharing-branding-container {
   display: none; }
+
+@media only screen and (max-width: 480px) {
+  .modal-close {
+    right: 5px; } }
