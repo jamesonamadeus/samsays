@@ -1,5 +1,5 @@
 //Change Navbar Background on Scroll
-window.onscroll = function () {
+window.onscroll = function() {
   var bnr = document.querySelector("#banner");
 
   if (window.pageYOffset >= 100) {
@@ -15,10 +15,10 @@ window.onscroll = function () {
 var scroll = new SmoothScroll('a[href*="#"]', {
   speed: 1000,
   offset: 100,
-  easing: 'easeInOutQuad'
+  easing: "easeInOutQuad"
 });
 
-(function () {
+(function() {
   //nav brgr
   var body = document.body;
   var linkToggle = document.getElementsByClassName("link-togg")[0];
@@ -51,16 +51,16 @@ var scroll = new SmoothScroll('a[href*="#"]', {
   }
 
   function toggle() {
-    [body, bannerNav, burgerContain, burgerNav].forEach(function (el) {
+    [body, bannerNav, burgerContain, burgerNav].forEach(function(el) {
       el.classList.toggle("open");
     });
   }
 
   // Lozad - Initialize library
   lozad(".lozad", {
-    load: function (el) {
+    load: function(el) {
       el.src = el.dataset.src;
-      el.onload = function () {
+      el.onload = function() {
         el.classList.add("fade");
       };
     }
@@ -68,9 +68,12 @@ var scroll = new SmoothScroll('a[href*="#"]', {
 })();
 
 //Toggle Nav from Links
-// $(".link-togg").on("click", function () {
-//   $("body").removeClass("open");
-//   $(".nav-contain").removeClass("open");
-//   $(".nav-list").removeClass("open");
-//   $(".banner").removeClass("open");
-// });
+$(".link-togg").on("click", function() {
+  $("body").removeClass("open");
+  $(".nav-contain").removeClass("open");
+  $(".nav-list").removeClass("open");
+  $(".banner").removeClass("open");
+});
+
+//jQuery Modal
+$("#modal").iziModal();
