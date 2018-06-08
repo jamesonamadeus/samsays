@@ -204,28 +204,29 @@
 
 @media only screen and (max-width: $break-sm) {
   .hero {
-    height: 70vh;
+    height: 80vh;
 
     &-tagline {
       @include font-size(54);
       padding: 0 0 0 15px;
 
       &-1st {
-        margin: -4% 0 0;
+        margin: -1% 0 0;
       }
 
       &-2nd {
-        margin: -7% 0 0;
+        margin: -3% 0 0;
       }
 
       &-3rd {
-        margin: -7.2% 0 0;
+        margin: -3% 0 0;
       }
     }
 
     &-info {
       @include align-items(center);
       padding: 0 15px 0;
+      margin: 5% auto 0;
     }
 
     &-subline {

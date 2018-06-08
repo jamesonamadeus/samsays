@@ -797,22 +797,23 @@ object {
 
 @media only screen and (max-width: 480px) {
   .hero {
-    height: 70vh; }
+    height: 80vh; }
     .hero-tagline {
       font-size: 54px !important;
       font-size: 3.375rem !important;
       padding: 0 0 0 15px; }
       .hero-tagline-1st {
-        margin: -4% 0 0; }
+        margin: -1% 0 0; }
       .hero-tagline-2nd {
-        margin: -7% 0 0; }
+        margin: -3% 0 0; }
       .hero-tagline-3rd {
-        margin: -7.2% 0 0; }
+        margin: -3% 0 0; }
     .hero-info {
       -ms-flex-align: center;
       -webkit-align-items: center;
       align-items: center;
-      padding: 0 15px 0; }
+      padding: 0 15px 0;
+      margin: 5% auto 0; }
     .hero-subline {
       width: 100%; }
       .hero-subline-primer {
