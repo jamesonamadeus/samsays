@@ -465,9 +465,9 @@ object {
   border-radius: 5px;
   border: 1px solid #fff;
   font-family: "ProximaNova-Regular", sans-serif;
-  padding: 14px 32px 20px;
+  padding: 13px 32px 20px;
   margin: 0;
-  height: 62px; }
+  height: 60px; }
   .nav-cta:hover, .nav-cta:focus {
     background: #fff;
     color: #24d6dc !important; }
@@ -487,9 +487,9 @@ object {
   .nav-link {
     padding: 15px 16px 10px; }
   .nav-cta {
-    padding: 14px 24px 20px; } }
+    padding: 13px 24px 20px; } }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 850px) {
   .banner {
     -ms-flex-align: start;
     -webkit-align-items: flex-start;
