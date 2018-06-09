@@ -64,7 +64,7 @@
     @include align-items(flex-end);
     @include justify-content(center);
     padding: 0 50px 0 0;
-    margin: 6% 0 0 0;
+    margin: 5% 0 0 0;
   }
 
   &-subline {
@@ -215,11 +215,11 @@
       }
 
       &-2nd {
-        margin: -3% 0 0;
+        margin: -2% 0 0;
       }
 
       &-3rd {
-        margin: -3% 0 0;
+        margin: -2% 0 0;
       }
     }
 
