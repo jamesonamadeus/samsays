@@ -42,24 +42,24 @@
           }
 
           &:after {
-            position: absolute;
-            color: $white;
             bottom: 0;
-            left: 0;
-            right: 0;
+            color: $white;
             content: "";
             height: 3px;
+            left: 0;
             margin: 0;
             opacity: 0;
+            position: absolute;
+            right: 0;
           }
 
           &:hover:after {
             @include animation(fill 0.7s forwards);
             background: $color-primary;
             color: $white;
-            z-index: -1;
             opacity: 1;
             width: 100%;
+            z-index: -1;
           }
         }
 
@@ -108,12 +108,12 @@
   }
 
   &-item {
-    cursor: pointer;
-    display: inline-block;
-    position: relative;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
+    cursor: pointer;
+    display: inline-block;
     padding: 0 18px 0 14px;
+    position: relative;
 
     &-adj {
       padding: 0 0 0 14px;
@@ -129,16 +129,16 @@
   }
 
   &-link {
-    @include transition(all 1s);
     @include font-size(22);
+    @include transition(all 1s);
     color: $white;
     display: block;
     font-family: $font-primary;
-    text-shadow: 1px 1px 3px $black;
     height: 60px;
     padding: 15px 20px 10px;
     position: relative;
     text-decoration: none;
+    text-shadow: 1px 1px 3px $black;
     width: 100%;
 
     &:hover,
@@ -149,35 +149,35 @@
     }
 
     &:after {
-      position: absolute;
       bottom: 0;
-      left: 0;
-      right: 0;
       content: "";
       height: 3px;
+      left: 0;
       margin: 0;
       opacity: 0;
+      position: absolute;
+      right: 0;
     }
 
     &:hover:after {
       @include animation(fill 0.7s forwards);
       background: $color-primary;
-      z-index: -10;
       opacity: 1;
       width: 100%;
+      z-index: -10;
     }
   }
 
   &-cta {
     @include font-size(22);
-    color: $white !important;
     background: $color-primary;
     border-radius: 5px;
     border: 1px solid $white;
+    color: $white !important;
     font-family: $font-primary;
-    padding: 13px 32px 20px;
-    margin: 0;
     height: 60px;
+    margin: 0;
+    padding: 13px 32px 20px;
 
     &:hover,
     &:focus {
@@ -220,12 +220,12 @@
 }
 
 //Nav Variables
-$brgr-height: 55px;
 $brgr-border-width: 2px;
-$brgr-margin: 40px;
 $brgr-bun-width: 25px;
-$brgr-bun-height: $brgr-border-width;
 $brgr-font-size: 22px;
+$brgr-height: 55px;
+$brgr-margin: 40px;
+$brgr-bun-height: $brgr-border-width;
 $brgr-text-pad: $brgr-margin;
 $brgr-transition-speed: 0.5s;
 $brgr-transition: all $brgr-transition-speed ease;
@@ -251,10 +251,10 @@ $brgr-transition: all $brgr-transition-speed ease;
           background: $white;
 
           .submenu {
-            display: block;
-            border: 1px solid $color-secondary;
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
+            border: 1px solid $color-secondary;
+            display: block;
           }
         }
       }
@@ -262,13 +262,13 @@ $brgr-transition: all $brgr-transition-speed ease;
   }
   .nav {
     &-list {
-      @include flexbox(flex);
       @include flex-direction(column);
+      @include flexbox(flex);
       position: absolute;
       right: 0;
       top: 59px;
-      z-index: 10;
       width: 0;
+      z-index: 10;
 
       &.open {
         background: $color-secondary;
@@ -325,8 +325,8 @@ $brgr-transition: all $brgr-transition-speed ease;
     &-cta {
       @include font-size(22);
       background: $color-primary;
-      border: 1px solid $color-primary;
       border-radius: 0;
+      border: 1px solid $color-primary;
       display: block;
       height: 80px;
       padding: 24px 30px 25px !important;
@@ -345,8 +345,8 @@ $brgr-transition: all $brgr-transition-speed ease;
 
     &-menu {
       background: $white;
-      border: $color-primary solid $brgr-border-width;
       border-radius: 50%;
+      border: $color-primary solid $brgr-border-width;
       cursor: pointer;
       display: inline-block;
       height: $brgr-height;

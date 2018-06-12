@@ -1,16 +1,16 @@
 /* Navigation - Fill*/
 @-webkit-keyframes fill {
   0% {
-    width: 0%;
     height: 1px;
+    width: 0%;
   }
   50% {
-    width: 100%;
     height: 1px;
+    width: 100%;
   }
   100% {
-    width: 100%;
     height: 100%;
+    width: 100%;
   }
 }
 
@@ -39,37 +39,37 @@
 
 // Animated Gradient
 @-webkit-keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @-moz-keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 @keyframes animatedgradient {
-	0% {
-		background-position: 0% 50%
-	}
-	50% {
-		background-position: 100% 50%
-	}
-	100% {
-		background-position: 0% 50%
-	}
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }
