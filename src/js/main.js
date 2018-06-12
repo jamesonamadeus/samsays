@@ -2,7 +2,7 @@
 window.onscroll = function() {
   var bnr = document.querySelector("#banner");
 
-  if (window.pageYOffset >= 100) {
+  if (window.pageYOffset >= 50) {
     bnr.classList.add("banner--scroll");
     bnr.classList.remove("banner--top");
   } else {
