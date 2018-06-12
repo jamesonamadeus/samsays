@@ -1,9 +1,9 @@
 .modal {
   &-close {
-    @include flexbox(flex);
     @include align-items(center);
-    @include justify-content(center);
+    @include flexbox(flex);
     @include font-size(58);
+    @include justify-content(center);
     background: $color-secondary;
     border-radius: 50%;
     border: 3px solid $color-secondary;
@@ -30,8 +30,8 @@
 .iziModal {
   background: transparent !important;
   box-shadow: none !important;
-  transition: none !important;
   margin: 20px auto !important;
+  transition: none !important;
 }
 
 #mtr-form-branding-container,

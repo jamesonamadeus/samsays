@@ -14,8 +14,7 @@
     &-heading {
       color: $white;
       margin: 0 auto 40px;
-      text-shadow: 1px 2px 3px $color-text,
-                 -1px -1px 3px $color-text;
+      text-shadow: 1px 2px 3px $color-text, -1px -1px 3px $color-text;
     }
   }
 
@@ -39,9 +38,8 @@
       @include font-size(36);
       color: $white;
       font-family: $font-primary-bold;
-      text-shadow: 1px 2px 3px $color-text,
-                 -1px -1px 3px $color-text;
       max-width: 720px !important;
+      text-shadow: 1px 2px 3px $color-text, -1px -1px 3px $color-text;
 
       &:last-of-type {
         margin: 0 auto;
@@ -67,8 +65,7 @@
     }
 
     &-primer {
-
-      p{
+      p {
         @include font-size(28);
       }
     }
@@ -81,7 +78,6 @@
 
 @media only screen and (max-width: $break-md) {
   .mission {
-
     .section {
       &-inner {
         padding: 50px 20px;
@@ -89,8 +85,7 @@
     }
 
     &-primer {
-
-      p{
+      p {
         @include font-size(24);
       }
     }
@@ -110,8 +105,7 @@
     }
 
     &-primer {
-
-      p{
+      p {
         @include font-size(20);
       }
     }
@@ -131,7 +125,7 @@
     }
 
     &-primer {
-      p{
+      p {
         @include font-size(18);
       }
     }

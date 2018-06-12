@@ -768,12 +768,12 @@ object {
     height: 85vh; }
     .hero-bg:before {
       content: "";
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
+      background: rgba(0, 0, 0, 0.15);
       bottom: 0;
-      background: rgba(0, 0, 0, 0.15); }
+      left: 0;
+      position: absolute;
+      right: 0;
+      top: 0; }
     .hero-content {
       margin-top: 90px; }
     .hero-info {
@@ -906,32 +906,32 @@ object {
   -webkit-text-fill-color: transparent; }
 
 .problem-dataset {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
   -ms-flex-direction: column;
   -webkit-flex-direction: column;
   flex-direction: column;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
   margin: 30px auto 0; }
   .problem-dataset-first, .problem-dataset-second, .problem-dataset-third {
-    display: -ms-flexbox;
-    display: -webkit-flex;
-    display: flex;
     -ms-flex-align: center;
     -webkit-align-items: center;
     align-items: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
     -ms-flex-direction: row-reverse;
     -webkit-flex-direction: row-reverse;
     flex-direction: row-reverse;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
     margin: 30px auto;
     width: 100%; }
   .problem-dataset-second {
@@ -1039,8 +1039,8 @@ object {
       font-size: 2.25rem !important;
       color: #fff;
       font-family: "ProximaNova-Bold", sans-serif;
-      text-shadow: 1px 2px 3px #333, -1px -1px 3px #333;
-      max-width: 720px !important; }
+      max-width: 720px !important;
+      text-shadow: 1px 2px 3px #333, -1px -1px 3px #333; }
       .mission-primer p:last-of-type {
         margin: 0 auto; }
 
@@ -1164,17 +1164,17 @@ body {
     font-size: 2rem !important; } }
 
 .modal-close {
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
   -ms-flex-align: center;
   -webkit-align-items: center;
   align-items: center;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  font-size: 58px !important;
+  font-size: 3.625rem !important;
   -ms-flex-pack: center;
   -webkit-justify-content: center;
   justify-content: center;
-  font-size: 58px !important;
-  font-size: 3.625rem !important;
   background: #7a7dd3;
   border-radius: 50%;
   border: 3px solid #7a7dd3;
@@ -1195,8 +1195,8 @@ body {
 .iziModal {
   background: transparent !important;
   box-shadow: none !important;
-  transition: none !important;
-  margin: 20px auto !important; }
+  margin: 20px auto !important;
+  transition: none !important; }
 
 #mtr-form-branding-container,
 #mtr-sharing-branding-container {

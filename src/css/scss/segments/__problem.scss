@@ -15,19 +15,19 @@
   }
 
   &-dataset {
-    @include flexbox(flex);
     @include align-items(center);
-    @include justify-content(center);
     @include flex-direction(column);
+    @include flexbox(flex);
+    @include justify-content(center);
     margin: 30px auto 0;
 
     &-first,
     &-second,
     &-third {
-      @include flexbox(flex);
       @include align-items(center);
-      @include justify-content(center);
       @include flex-direction(row-reverse);
+      @include flexbox(flex);
+      @include justify-content(center);
       margin: 30px auto;
       width: 100%;
     }
