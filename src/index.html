@@ -1,268 +1,485 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Samsays</title>
+    <meta
+      name="description"
+      content="Travel through teaching. Samsays connects vetted english teachers with educational institutions around the world."
+    />
 
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="x-ua-compatible" content="ie=edge" />
-  <title>Samsays</title>
-  <meta name="description" content="Samsays - a network platform of vetted educators and institutions for future generations">
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="cleartype" content="on" />
+    <meta property="og:title" content="Samsays" />
+    <meta
+      property="og:description"
+      content="Travel through teaching. Samsays connects vetted english teachers with educational institutions around the world."
+    />
+    <meta
+      property="og:image"
+      content="https://samsays.co/images/logo-standardx720.png"
+    />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
-  <meta http-equiv="cleartype" content="on" />
+    <link
+      rel="apple-touch-icon"
+      sizes="57x57"
+      href="favicon/apple-icon-57x57.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="60x60"
+      href="favicon/apple-icon-60x60.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="favicon/apple-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="76x76"
+      href="favicon/apple-icon-76x76.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="favicon/apple-icon-114x114.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="120x120"
+      href="favicon/apple-icon-120x120.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="144x144"
+      href="favicon/apple-icon-144x144.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="152x152"
+      href="favicon/apple-icon-152x152.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="favicon/favicon-16x16.png"
+    />
+    <link rel="manifest" href="favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta
+      name="msapplication-TileImage"
+      content="favicon/ms-icon-144x144.png"
+    />
+    <meta name="theme-color" content="#ffffff" />
 
-  <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
-  <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
-  <link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
-  <link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
-  <link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
-  <link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
-  <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
-  <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-  <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
-  <link rel="manifest" href="favicon/manifest.json">
-  <meta name="msapplication-TileColor" content="#ffffff">
-  <meta name="msapplication-TileImage" content="favicon/ms-icon-144x144.png">
-  <meta name="theme-color" content="#ffffff">
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+      integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+      crossorigin="anonymous"
+    />
 
-  <!--Font Awesome-->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
-    crossorigin="anonymous">
+    <!-- MatireApp -->
+    <script>
+      !(function(m, a, i, t, r, e) {
+        if (m.Maitre) return;
+        (r = m.Maitre = {}),
+          (r.uuid = t),
+          (r.loaded = 0),
+          (r.base_url = i),
+          (r.queue = []),
+          (m.mtr = function() {
+            r.queue.push(arguments);
+          });
+        (e = a.getElementsByTagName("script")[0]),
+          (c = a.createElement("script"));
+        (c.async = !0),
+          (c.src = i + "/widget/" + t + ".js"),
+          e.parentNode.insertBefore(c, e);
+      })(window, document, "https://maitreapp.co", "MF2e360f47bb");
+    </script>
 
-  <!--MatireApp-->
-  <script>!function (m, a, i, t, r, e) { if (m.Maitre) return; r = m.Maitre = {}, r.uuid = t, r.loaded = 0, r.base_url = i, r.queue = [], m.mtr = function () { r.queue.push(arguments) }; e = a.getElementsByTagName('script')[0], c = a.createElement('script'); c.async = !0, c.src = i + '/widget/' + t + '.js', e.parentNode.insertBefore(c, e) }(window, document, 'https://maitreapp.co', 'MF2e360f47bb');</script>
+    <!-- build:css css/styles.min.css -->
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/izimodal.css" />
+    <!-- additional css here to be concatenated & minified -->
+    <!-- endbuild -->
+  </head>
 
-  <!--build:css css/styles.min.css-->
-  <link rel="stylesheet" href="css/main.css" />
-  <link rel="stylesheet" href="css/izimodal.css" />
-  <!--additional css here to be concatenated & minified-->
-  <!--endbuild-->
-</head>
+  <body data-spy="scroll">
+    <header class="banner banner--top" role="banner" id="banner">
+      <h1 class="logo-main">
+        <a href="#">
+          <img
+            id="logo-img"
+            class="lozad logo-img"
+            data-src="images/logo-whitex720.png"
+            alt="Samsays White Logo"
+          />
+          <img
+            id="logo-img-2"
+            class="lozad logo-img-scroll"
+            data-src="images/logo-standardx720.png"
+            alt="Samsays Standard Logo"
+          />
+          <span class="is-hidden">Samsays</span>
+        </a>
+      </h1>
+      <nav class="nav" role="navigation">
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a href="#problem" class="nav-link link-togg" data-scroll
+              >The Problem</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#mission" class="nav-link link-togg" data-scroll
+              >Our Mission</a
+            >
+          </li>
+          <li class="nav-item">
+            <a href="#benefits" class="nav-link link-togg" data-scroll
+              >Benefits</a
+            >
+          </li>
+          <li class="nav-item nav-item-adj">
+            <a
+              class="nav-cta btn link-togg"
+              data-izimodal-open="#modal"
+              data-izimodal-fullscreen=""
+              >Early Access</a
+            >
+          </li>
+        </ul>
 
-<body data-spy="scroll">
-  <header class="banner banner--top" role="banner" id="banner">
-    <h1 class="logo-main">
-      <a href="#">
-        <img id="logo-img" class="lozad logo-img" data-src="images/logo-whitex720.png" alt="Samsays White Logo">
-        <img id="logo-img-2" class="lozad logo-img-scroll" data-src="images/logo-standardx720.png" alt="Samsays Standard Logo">
-        <span class="is-hidden">Samsays</span>
-      </a>
-    </h1>
-    <nav class="nav" role="navigation">
-      <ul class="nav-list">
-        <li class="nav-item">
-          <a href="#problem" class="nav-link link-togg" data-scroll>The Problem</a>
-        </li>
-        <li class="nav-item">
-          <a href="#mission" class="nav-link link-togg" data-scroll>Our Mission</a>
-        </li>
-        <li class="nav-item">
-          <a href="#benefits" class="nav-link link-togg" data-scroll>Benefits</a>
-        </li>
-        <li class="nav-item nav-item-adj">
-          <a class="nav-cta btn link-togg" data-izimodal-open="#modal" data-izimodal-fullscreen="">Early
-            Access</a>
-        </li>
-      </ul>
-
-      <div class="nav-contain nav-togg">
-        <div class="nav-menu">
-          <div class="nav-bun nav-bun--top"></div>
-          <div class="nav-bun nav-bun--mid"></div>
-          <div class="nav-bun nav-bun--bot"></div>
-        </div>
-      </div>
-    </nav>
-  </header>
-
-  <main class="main">
-    <!--Start Hero-->
-    <section class="hero" id="hero">
-      <div class="hero-wrapper">
-        <div class="hero-bg">
-        </div>
-      </div>
-      <div class="hero-content">
-        <p class="hero-tagline hero-tagline-1st">Travel</p>
-        <p class="hero-tagline hero-tagline-2nd">Through</p>
-        <p class="hero-tagline hero-tagline-3rd">Teaching</p>
-        <div class="hero-info">
-          <div class="hero-subline">
-            <p class="hero-subline-primer">Current Destination:</p>
-            <p class="hero-subline-info" data-text="South Korea">South Korea</p>
-            <img class="lozad hero-subline-img" data-src="images/koreanflag.png" alt="Korean Flag">
+        <div class="nav-contain nav-togg">
+          <div class="nav-menu">
+            <div class="nav-bun nav-bun--top"></div>
+            <div class="nav-bun nav-bun--mid"></div>
+            <div class="nav-bun nav-bun--bot"></div>
           </div>
-          <button class="btn hero-btn" data-izimodal-open="#modal" data-izimodal-fullscreen="">Sign Up for Early
-            Access</button>
         </div>
-      </div>
-    </section>
-    <!--/End Hero-->
+      </nav>
+    </header>
 
-    <!--Start Problem-->
-    <section class="section problem" id="problem">
-      <div class="section-inner">
-        <h3 class="section-heading">The Problem</h3>
-        <div class="problem-dataset">
-          <div class="problem-dataset-first">
-            <div class="problem-dataset-element">
-              <h3>High Cost of Education</h3>
-              <p>With Americans owing a crippling <span class="primary-bold">$1.5 trillion in student loans</span>,
-                graduates are feeling more
-                pressure than ever. On average, a new graduate owes $31,000. 42% of
-                people who’ve gone to college took out debt, while 20% of the borrowers are continuing to be behind on
-                payments.</p>
+    <main class="main">
+      <!-- Start Hero -->
+      <section class="hero" id="hero">
+        <div class="hero-wrapper"><div class="hero-bg"></div></div>
+        <div class="hero-content">
+          <p class="hero-tagline hero-tagline-1st">Travel</p>
+          <p class="hero-tagline hero-tagline-2nd">Through</p>
+          <p class="hero-tagline hero-tagline-3rd">Teaching</p>
+          <div class="hero-info">
+            <div class="hero-subline">
+              <p class="hero-subline-primer">Current Destination:</p>
+              <p class="hero-subline-info" data-text="South Korea">
+                South Korea
+              </p>
+              <img
+                class="lozad hero-subline-img"
+                data-src="images/koreanflag.png"
+                alt="Korean Flag"
+              />
             </div>
-            <div class="problem-dataset-image">
-              <img class="lozad problem-dataset-icon" data-src="images/highdebtx500.png" alt="Stacks of coins and bills.">
-            </div>
-          </div>
-          <div class="problem-dataset-second">
-            <div class="problem-dataset-element">
-              <h3>Expanding Gap of Qualified Teachers</h3>
-              <p>There are currently more English language learners in the world than native speakers in America.
-                English is a highly demanded skill needed to traverse the global market. Qualified teachers are needed
-                to fill the increase necessities of ESL students.</p>
-            </div>
-            <div class="problem-dataset-image">
-              <img class="lozad problem-dataset-icon" data-src="images/demandx500.png" alt="A bar chart increasing while a linechart decreasing left to right, respectively.">
-            </div>
-          </div>
-          <div class="problem-dataset-third">
-            <div class="problem-dataset-element">
-              <h3>Sink or Swim Culture</h3>
-              <p>New teachers are often thrown into a classroom without the proper training or resources. Culture
-                shock,
-                dissatisfaction, and/or an incompatible understanding with hiring administrations have led to <span
-                  class="primary-bold">46% of teachers leaving the field</span> within five years.</p>
-            </div>
-            <div class="problem-dataset-image">
-              <img class="lozad problem-dataset-icon" data-src="images/sinkswimx500.png" alt="A three layer body of water with big waves.">
-            </div>
+            <button
+              class="btn hero-btn"
+              data-izimodal-open="#modal"
+              data-izimodal-fullscreen=""
+            >
+              Sign Up for Early Access
+            </button>
           </div>
         </div>
-      </div>
-    </section>
-    <!--/End Problem-->
+      </section>
+      <!-- /End Hero -->
 
-    <!--Start Mission-->
-    <section class="section mission" id="mission">
-      <div class="mission-bg">
+      <!-- Start Problem -->
+      <section class="section problem" id="problem">
         <div class="section-inner">
-          <h3 class="section-heading">Our Mission</h3>
-          <div class="mission-content">
-            <div class="mission-primer">
-              <p>Samsays is a growing dynamic community of passionate, committed, and qualified
-                teachers from around the globe.</p>
-              <p>Striving to improve not only the education space but the
-                futures
-                and lives of its
-                pupils who envision a brighter world.</p>
+          <h3 class="section-heading">The Problem</h3>
+          <div class="problem-dataset">
+            <div class="problem-dataset-first">
+              <div class="problem-dataset-element">
+                <h3>High Cost of Education</h3>
+                <p>
+                  With Americans owing a crippling
+                  <span class="primary-bold"
+                    >$1.5 trillion in student loans</span
+                  >, graduates are feeling more pressure than ever. On average,
+                  a new graduate owes $31,000. 42% of people who’ve gone to
+                  college took out debt, while 20% of the borrowers are
+                  continuing to be behind on payments.
+                </p>
+              </div>
+              <div class="problem-dataset-image">
+                <img
+                  class="lozad problem-dataset-icon"
+                  data-src="images/highdebtx500.png"
+                  alt="Stacks of coins and bills."
+                />
+              </div>
+            </div>
+            <div class="problem-dataset-second">
+              <div class="problem-dataset-element">
+                <h3>Expanding Gap of Qualified Teachers</h3>
+                <p>
+                  There are currently more English language learners in the
+                  world than native speakers in America. English is a highly
+                  demanded skill needed to traverse the global market. Qualified
+                  teachers are needed to fill the increase necessities of ESL
+                  students.
+                </p>
+              </div>
+              <div class="problem-dataset-image">
+                <img
+                  class="lozad problem-dataset-icon"
+                  data-src="images/demandx500.png"
+                  alt="A bar chart increasing while a linechart decreasing left to right, respectively."
+                />
+              </div>
+            </div>
+            <div class="problem-dataset-third">
+              <div class="problem-dataset-element">
+                <h3>Sink or Swim Culture</h3>
+                <p>
+                  New teachers are often thrown into a classroom without the
+                  proper training or resources. Culture shock, dissatisfaction,
+                  and/or an incompatible understanding with hiring
+                  administrations have led to
+                  <span class="primary-bold"
+                    >46% of teachers leaving the field</span
+                  >
+                  within five years.
+                </p>
+              </div>
+              <div class="problem-dataset-image">
+                <img
+                  class="lozad problem-dataset-icon"
+                  data-src="images/sinkswimx500.png"
+                  alt="A three layer body of water with big waves."
+                />
+              </div>
             </div>
           </div>
         </div>
-      </div>
-    </section>
-    <!--/End Mission-->
+      </section>
+      <!-- /End Problem -->
 
-    <!--Start Benefits-->
-    <section class="section benefits" id="benefits">
-      <div class="section-inner">
-        <h3 class="section-heading">Network Benefits</h3>
-        <div class="benefits-contain">
-          <div class="benefits-element">
-            <div class="benefits-icon">
-              <img class="lozad benefits-icon-img" data-src="images/protection-iconx420.png" alt="A process that is magnified and secured with qualified candidates">
+      <!-- Start Mission -->
+      <section class="section mission" id="mission">
+        <div class="mission-bg">
+          <div class="section-inner">
+            <h3 class="section-heading">Our Mission</h3>
+            <div class="mission-content">
+              <div class="mission-primer">
+                <p>
+                  Samsays is a growing dynamic community of passionate,
+                  committed, and qualified teachers from around the globe.
+                </p>
+                <p>
+                  Striving to improve not only the education space but the
+                  futures and lives of its pupils who envision a brighter world.
+                </p>
+              </div>
             </div>
-            <h3>Protection</h3>
-            <p>Both teachers and schools should feel confident and safe from those deemed unprofessional, unethical,
-              and/or uncommitted</p>
-          </div>
-          <div class="benefits-element">
-            <div class="benefits-icon">
-              <img class="lozad benefits-icon-img" data-src="images/guaranteed-iconx420.png" alt="Vetting process for schools and candidate">
-            </div>
-            <h3>Guaranteed</h3>
-            <p>Quality and professionalism is guaranteed through a meticulous vetting process on both sides - schools
-              and teachers</p>
-          </div>
-          <div class="benefits-element">
-            <div class="benefits-icon">
-              <img class="lozad benefits-icon-img" data-src="images/community-iconx420.png" alt="3 people in network connection over earth">
-            </div>
-            <h3>Community</h3>
-            <p>An internationally experienced community of professionals who are committed to our vision of a better
-              future in education</p>
-          </div>
-          <div class="benefits-element">
-            <div class="benefits-icon">
-              <img class="lozad benefits-icon-img  benefits-icon-img-trans" data-src="images/transparency-iconx420.png"
-                alt="Vetting process with a magnifying glass on a woman">
-            </div>
-            <h3>Transparency</h3>
-            <p>Ensuring there is no bias in selecting highly qualified teachers, Samsays prides itself on its
-              transparency and allows no room for choices based on superficialities</p>
-          </div>
-          <div class="benefits-element">
-            <div class="benefits-icon">
-              <img class="lozad benefits-icon-img" data-src="images/influence-iconx420.png" alt="Individual in the middle that has influence and connections with multiple people">
-            </div>
-            <h3>Influence</h3>
-            <p>Global markets will not only do better but also strive to be better in every dimension, encouraging the
-              industry to prosper</p>
-          </div>
-          <div class="benefits-element">
-            <div class="benefits-icon">
-              <img class="lozad benefits-icon-img benefits-icon-img-pro" data-src="images/progressive-iconx420.png" alt="Multiple arrows pointing northwest as in progression">
-            </div>
-            <h3>Progressive</h3>
-            <p>Educators and institutions of higher and fairer standards will continue to improve as more committed
-              teachers build better schools</p>
           </div>
         </div>
+      </section>
+      <!-- /End Mission -->
+
+      <!-- Start Mission -->
+      <section class="section mission" id="mission">
+        <div class="mission-bg">
+          <div class="section-inner">
+            <h3 class="section-heading">Our Mission</h3>
+            <div class="mission-content">
+              <div class="mission-primer">
+                <p>
+                  Samsays is a growing dynamic community of passionate,
+                  committed, and qualified teachers from around the globe.
+                </p>
+                <p>
+                  Striving to improve not only the education space but the
+                  futures and lives of its pupils who envision a brighter world.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /End Mission -->
+
+      <!-- Start Benefits -->
+      <section class="section benefits" id="benefits">
+        <div class="section-inner">
+          <h3 class="section-heading">Benefits</h3>
+          <div class="benefits-contain">
+            <div class="benefits-element">
+              <div class="benefits-icon">
+                <img
+                  class="lozad benefits-icon-img"
+                  data-src="images/protection-iconx420.png"
+                  alt="A process that is magnified and secured with qualified candidates"
+                />
+              </div>
+              <h3>Protection</h3>
+              <p>
+                Both teachers and schools should feel confident and safe from
+                those deemed unprofessional, unethical, and/or uncommitted
+              </p>
+            </div>
+            <div class="benefits-element">
+              <div class="benefits-icon">
+                <img
+                  class="lozad benefits-icon-img"
+                  data-src="images/guaranteed-iconx420.png"
+                  alt="Vetting process for schools and candidate"
+                />
+              </div>
+              <h3>Guaranteed</h3>
+              <p>
+                Quality and professionalism is guaranteed through a meticulous
+                vetting process on both sides - schools and teachers
+              </p>
+            </div>
+            <div class="benefits-element">
+              <div class="benefits-icon">
+                <img
+                  class="lozad benefits-icon-img"
+                  data-src="images/community-iconx420.png"
+                  alt="3 people in network connection over earth"
+                />
+              </div>
+              <h3>Community</h3>
+              <p>
+                An internationally experienced community of professionals who
+                are committed to our vision of a better future in education
+              </p>
+            </div>
+            <div class="benefits-element">
+              <div class="benefits-icon">
+                <img
+                  class="lozad benefits-icon-img  benefits-icon-img-trans"
+                  data-src="images/transparency-iconx420.png"
+                  alt="Vetting process with a magnifying glass on a woman"
+                />
+              </div>
+              <h3>Transparency</h3>
+              <p>
+                Ensuring there is no bias in selecting highly qualified
+                teachers, Samsays prides itself on its transparency and allows
+                no room for choices based on superficialities
+              </p>
+            </div>
+            <div class="benefits-element">
+              <div class="benefits-icon">
+                <img
+                  class="lozad benefits-icon-img"
+                  data-src="images/influence-iconx420.png"
+                  alt="Individual in the middle that has influence and connections with multiple people"
+                />
+              </div>
+              <h3>Influence</h3>
+              <p>
+                Global markets will not only do better but also strive to be
+                better in every dimension, encouraging the industry to prosper
+              </p>
+            </div>
+            <div class="benefits-element">
+              <div class="benefits-icon">
+                <img
+                  class="lozad benefits-icon-img benefits-icon-img-pro"
+                  data-src="images/progressive-iconx420.png"
+                  alt="Multiple arrows pointing northwest as in progression"
+                />
+              </div>
+              <h3>Progressive</h3>
+              <p>
+                Educators and institutions of higher and fairer standards will
+                continue to improve as more committed teachers build better
+                schools
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /End Benefits -->
+
+      <!-- Start Questions -->
+      <section class="section question">
+        <div class="section-inner">
+          <h3 class="section-heading">Questions?</h3>
+          <p class="question-primer">
+            If you have any questions at all, please do not hesitate to reach us
+            out at
+            <a href="mailto:support@samsays.co?subject=Samsays Question"
+              >support@samsays.co</a
+            >
+          </p>
+        </div>
+      </section>
+      <!-- /End Questions -->
+
+      <!-- Start Modal -->
+      <div id="modal">
+        <!--
+          data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home"
+        -->
+        <div
+          data-izimodal-close=""
+          data-izimodal-transitionout="bounceOutDown"
+          class="modal-close"
+        >
+          &times;
+        </div>
+        <div id="maitre-widget"></div>
       </div>
-    </section>
-    <!--/End Benefits-->
+      <!-- /End Modal -->
 
-    <!--Start Questions-->
-    <section class="section question">
-      <div class="section-inner">
-        <h3 class="section-heading">Questions?</h3>
-        <p class="question-primer">If you have any questions at all, please do not hesitate to reach us out at
-          <a href="mailto:support@samsays.co?subject=Samsays Question">support@samsays.co</a>
-        </p>
-      </div>
-    </section>
-    <!--/End Questions-->
+      <footer class="footer">
+        <p>&#9400; 2018 Samsays. All rights reserved.</p>
+        <p>Made with &#9829; in Boston</p>
+      </footer>
+    </main>
 
-    <!--Start Modal-->
-    <div id="modal">
-      <!-- data-iziModal-fullscreen="true"  data-iziModal-title="Welcome"  data-iziModal-subtitle="Subtitle"  data-iziModal-icon="icon-home" -->
-      <div data-izimodal-close="" data-izimodal-transitionout="bounceOutDown" class="modal-close">&times;
-      </div>
-      <div id="maitre-widget"></div>
-    </div>
-    <!--/End Modal-->
-
-    <footer class="footer">
-      <p>&#9400; 2018 Samsays. All rights reserved.</p>
-      <p>Made with &#9829; in Boston</p>
-    </footer>
-
-  </main>
-
-  <!--build:js js/main.min.js -->
-  <script src="js/vendor/jquery-3.3.1.min.js"></script>
-  <script src="js/vendor/iziModal.min.js"></script>
-  <script src="js/vendor/smooth-scroll.min.js"></script>
-  <script src="js/vendor/lozad.js"></script>
-  <script src="js/main.js"></script>
-  <!--additional js here to be concatenated & minified-->
-  <!--endbuild-->
-</body>
-
-
+    <!-- build:js js/main.min.js -->
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    <script src="js/vendor/iziModal.min.js"></script>
+    <script src="js/vendor/smooth-scroll.min.js"></script>
+    <script src="js/vendor/lozad.js"></script>
+    <script src="js/main.js"></script>
+    <!-- additional js here to be concatenated & minified -->
+    <!-- endbuild -->
+  </body>
 </html>
