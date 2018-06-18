@@ -77,3 +77,20 @@ $(".link-togg").on("click", function() {
 
 //jQuery Modal
 $("#modal").iziModal();
+
+//Maitreapp
+!(function(m, a, i, t, r, e) {
+  if (m.Maitre) return;
+  (r = m.Maitre = {}),
+    (r.uuid = t),
+    (r.loaded = 0),
+    (r.base_url = i),
+    (r.queue = []),
+    (m.mtr = function() {
+      r.queue.push(arguments);
+    });
+  (e = a.getElementsByTagName("script")[0]), (c = a.createElement("script"));
+  (c.async = !0),
+    (c.src = i + "/widget/" + t + ".js"),
+    e.parentNode.insertBefore(c, e);
+})(window, document, "https://maitreapp.co", "MF2e360f47bb");
