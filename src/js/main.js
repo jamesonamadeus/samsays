@@ -89,8 +89,8 @@ $("#modal").iziModal();
     (m.mtr = function() {
       r.queue.push(arguments);
     });
-  (e = a.getElementsByTagName("script")[0]), (c = a.createElement("script"));
-  (c.async = !0),
-    (c.src = i + "/widget/" + t + ".js"),
-    e.parentNode.insertBefore(c, e);
+  // (e = a.getElementsByTagName("script")[0]), (c = a.createElement("script"));
+  // (c.async = !0),
+  //   (c.src = i + "/widget/" + t + ".js"),
+  //   e.parentNode.insertBefore(c, e);
 })(window, document, "https://maitreapp.co", "MF2e360f47bb");
