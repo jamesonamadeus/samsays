@@ -1184,8 +1184,8 @@ body {
   line-height: 0;
   padding: 5px 0 0;
   position: absolute;
-  right: 10px;
-  top: -15px;
+  right: 9px;
+  top: 3px;
   width: 48px;
   z-index: 99; }
   .modal-close:hover, .modal-close:active, .modal-close:focus {
@@ -1195,12 +1195,14 @@ body {
 .iziModal {
   background: transparent !important;
   box-shadow: none !important;
-  margin: 20px auto !important;
   transition: none !important; }
 
 #mtr-form-branding-container,
 #mtr-sharing-branding-container {
   display: none; }
+
+#mtr-optin-form {
+  margin: 20px auto 0 !important; }
 
 @media only screen and (max-width: 480px) {
   .modal-close {
